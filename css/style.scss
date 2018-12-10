@@ -1,4 +1,7 @@
 body {
     background-image: url("../img/background.png");
     background-size: 60%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(5,100px);
 }
