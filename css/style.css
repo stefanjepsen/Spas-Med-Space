@@ -3,12 +3,10 @@
 body {
   background-image: url("../img/background.png");
   background-size: 60%;
-  font-family: "Handlee", cursive;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(5, 100px);
-  color: #fff6bb;
   text-transform: uppercase;
   font-size: 10em;
 }
