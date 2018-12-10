@@ -1,3 +1,34 @@
+
 body {
-    background-image: url("../img/background.png")
+    background-image: url("../img/background.png");
+    background-size: 60%;
+    grid-template-columns:  repeat(12, 1fr);
+    grid-template-rows: 100px 1fr 200px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    ".. mn mn mn mn mn mn mn mn mn mn .. "
+    "ft ft ft ft ft ft ft ft ft ft ft ft "
+}
+
+main {
+    grid-area: mn;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(200px, auto));
+    display: grid;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+.container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-rows: repeat(3, minmax(200px, auto)) ;
+    display: grid;
+    grid-column: span 12; 
+    grid-gap: 40px;
+}
+
+.item {
+    img {
+        width: 100px;
+    }
 }
