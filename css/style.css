@@ -51,18 +51,51 @@ nav ul li {
 .page-footer {
   background-color: #0000 !important;
   width: 100%;
-  height: 400px;
-  background-image: url("../img/moon2.png");
-  background-size: 100% 100%;
-  bottom: -15% !important;
+  height: auto;
+  background-image: url("../img/moon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
 }
 
-#illulogo img {
-  height: 150px !important;
-  width: 150px !important;
-  position: absolute !important;
+#footer-content {
+  padding: 80px 70px 0 70px;
+}
+#footer-content img {
+  height: 50px;
+  width: auto;
 }
 
+@media only screen and (max-width: 399px) {
+  .page-footer {
+    height: 100px !important;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .page-footer {
+    height: 130px !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .page-footer {
+    height: 180px !important;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .page-footer {
+    height: 250px !important;
+  }
+
+  #footer-content {
+    padding-top: 110px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .page-footer {
+    height: 300px !important;
+  }
+}
 /*
 .row > div {
   background: #dddddd;
