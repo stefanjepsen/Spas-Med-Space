@@ -52,6 +52,16 @@ $fonts: (
   header {
     height: 150px;
   }
+
+  
+h3 {
+  font-family: "Handlee", cursive !important;
+  color: #fff200 !important;
+  text-align: center;
+  margin: 0 !important;
+  text-transform: uppercase;
+  font-size: 2em !important; 
+}
   
   #logo {
     position: absolute;
@@ -82,6 +92,11 @@ $fonts: (
 
   main {
     flex: 1 0 auto;
+  }
+
+  h3 {
+    font-family: font-family(header1) !important;
+    color: color(secondary) !important;
   }
 
  #outside-solar-syst {
@@ -394,6 +409,10 @@ $fonts: (
   }
   
   @media only screen and (max-width: 490px) {
+    
+    header {
+      height: 80px !important;
+    }
     nav ul li a {
       font-size: 1.5em !important;
     }
@@ -404,12 +423,27 @@ $fonts: (
       height: 50px !important;
       width: 50px !important;
     }
+    #outside-solar-syst {
+      height: 600px;
+  }
   }
   
   @media only screen and (max-width: 600px) {
     nav ul a {
       font-size: 2.3em !important;
     }
+
+    header {
+      height: 120px;
+    }
+   
+    h3 {
+      font-size: 1.3em !important;
+    }
+
+    #outside-solar-syst {
+      height: 600px;
+  }
 
     .sun {
         height: 50px;
@@ -548,7 +582,7 @@ $fonts: (
   }
 
   @media only screen and (min-width: 680px) {
-      
+    
     .sun {
         height: 140px;
         width: 140px;
