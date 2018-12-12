@@ -9,6 +9,13 @@ body {
   background-size: 60%;
   font-family: "Roboto", sans-serif !important;
   z-index: -1;
+  display: flex !important;
+  min-height: 100vh !important;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 header {
@@ -55,11 +62,21 @@ nav ul li {
   background-color: #0000 !important;
   width: 100%;
   height: auto;
-  background-image: url("../img/moon.png");
+  background-image: url("../img/moon2.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  position: fixed;
+  position: static;
   bottom: 0;
+}
+
+.infobox {
+  margin-top: -10px !important;
+  display: flex !important;
+}
+
+.black-text1 {
+  margin: 1rem !important;
+  color: black;
 }
 
 #footer-content {
@@ -70,13 +87,18 @@ nav ul li {
   width: auto;
 }
 
+@media only screen and (min-width: 0px) {
+  * {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 399px) {
   .page-footer {
     height: 100px !important;
   }
 
   #footer-content img {
-    height: 2em;
+    height: 1em;
     width: auto;
     margin-bottom: -10%;
   }
@@ -87,7 +109,7 @@ nav ul li {
   }
 
   #footer-content img {
-    height: 3em;
+    height: 1.5em;
     width: auto;
   }
 
@@ -121,7 +143,7 @@ nav ul li {
   }
 
   #footer-content img {
-    height: 4.5em;
+    height: 2.5em;
     width: auto;
   }
 }
@@ -135,9 +157,8 @@ nav ul li {
   }
 
   #footer-content img {
-    height: 5em;
+    height: 4em;
     width: auto;
-    margin-bottom: 10%;
   }
 
   #logo {
@@ -151,7 +172,7 @@ nav ul li {
   }
 
   #footer-content img {
-    height: 7em;
+    height: 5em;
     width: auto;
     margin-bottom: 10%;
   }
@@ -162,7 +183,7 @@ nav ul li {
   }
 
   #footer-content img {
-    height: 7em;
+    height: 6em;
     width: auto;
     margin-bottom: 25%;
   }
