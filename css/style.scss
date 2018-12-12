@@ -5,8 +5,9 @@ $colors: (
   primary: #005dff,
   primary-light: lighten(#005dff, 40%),
   primary-dark: darken(#005dff, 40%),
-  secondary: #fff200,
-  basic: #fff
+  secondary: hsl(57, 100%, 50%),
+  basic: #fff,
+  blackbasic: black
 );
 
 $fonts: (
@@ -37,6 +38,16 @@ body {
   background-size: 60%;
   font-family: font-family(text1) !important;
   z-index: -1;
+  display: flex !important;
+  min-height: 100vh !important;
+  flex-direction: column;
+  
+}
+
+
+
+main {
+  flex: 1 0 auto;
 }
 
 header {
@@ -83,14 +94,24 @@ nav ul li {
   background-color: #0000 !important;
   width: 100%;
   height: auto;
-  background-image: url("../img/moon.png");
+  background-image: url("../img/moon2.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  position:fixed;
+  position: static;
   bottom:0;
-
 }
 
+.infobox {
+  margin-top: -10px !important;
+  display: flex !important;
+  
+}
+
+
+.black-text1 {
+    margin: 1rem !important;
+    color: color(blackbasic);
+  }
 
 
 
