@@ -12,6 +12,7 @@ body {
   display: flex !important;
   min-height: 100vh !important;
   flex-direction: column;
+  color: white;
 }
 
 main {
