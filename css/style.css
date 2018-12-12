@@ -70,13 +70,18 @@ nav ul li {
   width: auto;
 }
 
+@media only screen and (min-width: 0px) {
+  * {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 399px) {
   .page-footer {
     height: 100px !important;
   }
 
   #footer-content img {
-    height: 2em;
+    height: 1em;
     width: auto;
     margin-bottom: -10%;
   }
@@ -87,7 +92,7 @@ nav ul li {
   }
 
   #footer-content img {
-    height: 3em;
+    height: 1.5em;
     width: auto;
   }
 
@@ -121,7 +126,7 @@ nav ul li {
   }
 
   #footer-content img {
-    height: 4.5em;
+    height: 2.5em;
     width: auto;
   }
 }
@@ -135,9 +140,8 @@ nav ul li {
   }
 
   #footer-content img {
-    height: 5em;
+    height: 4em;
     width: auto;
-    margin-bottom: 10%;
   }
 
   #logo {
@@ -151,7 +155,7 @@ nav ul li {
   }
 
   #footer-content img {
-    height: 7em;
+    height: 5em;
     width: auto;
     margin-bottom: 10%;
   }
@@ -162,7 +166,7 @@ nav ul li {
   }
 
   #footer-content img {
-    height: 7em;
+    height: 6em;
     width: auto;
     margin-bottom: 25%;
   }
