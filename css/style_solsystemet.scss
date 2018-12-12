@@ -1,0 +1,738 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Handlee");
+
+$colors: (
+  primary: #005dff,
+  primary-light: lighten(#005dff, 40%),
+  primary-dark: darken(#005dff, 40%),
+  secondary: #fff200,
+  basic: #fff
+);
+
+$fonts: (
+  header1: (
+    "Handlee",
+    cursive
+  ),
+  text1: (
+    "Roboto",
+    sans-serif
+  )
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+  }
+  
+  @function font-family($font-name) {
+    @return map-get($fonts, $font-name);
+  }
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background-image: url("../img/background.png");
+    background-size: 60%;
+    font-family: "Roboto", sans-serif !important;
+    color: #fff;
+    z-index: -1;
+    min-height: 100vh !important;
+    flex-direction: column;
+  }
+
+  header {
+    height: 150px;
+  }
+  
+  #logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  nav ul a {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    display: block;
+    margin-right:-17px;
+    cursor: pointer;
+    font-size: 3em !important;
+    font-family: font-family(header1) !important;
+    color: color(basic) !important;
+  
+  }
+  nav ul li {
+    margin-top: 30px;
+    color: color(secondary) !important;
+  }
+  
+  #nav-mobile {
+    margin:auto !important;
+    display: inline-block !important;  
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+ #outside-solar-syst {
+     position: relative;
+     height: 700px;
+ }
+
+  .solar-syst div {
+    border-radius: 1000px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 999;
+  }
+  .solar-syst div:not(.sun) {
+    border: 1px solid rgba(172, 172, 172, 0.226);
+  }
+  .solar-syst div:not(.sun):before {
+    left: 50%;
+    border-radius: 100px;
+    content: "";
+    position: absolute;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .sun {
+    background-image: url("../img/sun.png");
+    height: 80px;
+    width: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+    background-clip: padding-box;
+    border: 0 !important;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: spin 15s linear infinite;
+  }
+  
+  .mercury {
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    -webkit-animation: orb 7s linear infinite;
+            animation: orb 7s linear infinite;
+
+  }
+  .mercury:before {
+    height: 17px;
+    width: 17px;
+    background-image: url("../img/merkur.png");
+    margin-top: -8px;
+    margin-left: -8px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: spin 10s linear infinite;
+  }
+  
+  .venus {
+    height: 160px;
+    width: 160px;
+    margin-top: -80px;
+    margin-left: -80px;
+    -webkit-animation: orb 18s linear infinite;
+            animation: orb 18s linear infinite;
+  }
+  .venus:before {
+    height: 22px;
+    width: 22px;
+    background-image: url("../img/venus.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    margin-left: -10px;
+    animation: spin 10s linear infinite;
+  }
+  
+  .earth {
+    height: 220px;
+    width: 220px;
+    margin-top: -110px;
+    margin-left: -110px;
+    -webkit-animation: orb 30s linear infinite;
+            animation: orb 30s linear infinite;
+  }
+  .earth:before {
+    height: 22px;
+    width: 22px;
+    background-image: url("../img/earth.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    margin-left: -10px;
+    animation: spin 10s linear infinite;
+  }
+  
+  .mars {
+    height: 280px;
+    width: 280px;
+    margin-top: -140px;
+    margin-left: -140px;
+    -webkit-animation: orb 56s linear infinite;
+            animation: orb 56s linear infinite;
+  }
+  .mars:before {
+    height: 17px;
+    width: 17px;
+    background-image: url("../img/mars.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    margin-left: -10px;
+    animation: spin 10s linear infinite;
+  }
+  
+  .jupiter {
+    height: 340px;
+    width: 340px;
+    margin-top: -170px;
+    margin-left: -170px;
+    -webkit-animation: orb 40s linear infinite;
+            animation: orb 40s linear infinite;
+  }
+  .jupiter:before {
+    height: 43px;
+    width: 43px;
+    background-image: url("../img/jupiter.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    margin-left: -20px;
+    animation: spin 10s linear infinite;
+  }
+  
+  .saturn {
+    height: 400px;
+    width: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    -webkit-animation: orb 80s linear infinite;
+            animation: orb 80s linear infinite;
+  }
+  .saturn:before {
+    height: 70px;
+    width: 70px;
+    background-image: url("../img/saturn.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -15px;
+    margin-left: -15px;
+  }
+  
+  .uranus {
+    height: 460px;
+    width: 460px;
+    margin-top: -230px;
+    margin-left: -230px;
+    -webkit-animation: orb 110s linear infinite;
+            animation: orb 110s linear infinite;
+  }
+  .uranus:before {
+    height: 25px;
+    width: 25px;
+    background-image: url("../img/uranus.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -15px;
+    margin-left: -15px;
+    animation: spin 10s linear infinite;
+  }
+  
+  .neptune {
+    height: 520px;
+    width: 520px;
+    margin-top: -260px;
+    margin-left: -260px;
+    -webkit-animation: orb 70s linear infinite;
+            animation: orb 70s linear infinite;
+  }
+  .neptune:before {
+    height: 25px;
+    width: 25px;
+    background-image: url("../img/neptun.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -15px;
+    margin-left: -15px;
+    animation: spin 10s linear infinite;
+  }
+  
+  
+  .pluto {
+    height: 580px;
+    width: 580px;
+    margin-top: -290px;
+    margin-left: -290px;
+    -webkit-animation: orb 150s linear infinite;
+            animation: orb 150s linear infinite;
+  }
+  .pluto:before {
+    height: 15px;
+    width: 15px;
+    background-image: url("../img/pluto.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -8px;
+    margin-left: -8px;
+    animation: spin 10s linear infinite;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .links {
+    margin-top: 5px !important;
+    font-size: 1em !important;
+  }
+  
+  @-webkit-keyframes orb {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+  
+  @keyframes orb {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+
+  .page-footer{ 
+    background-color: #0000 !important;
+    width: 100%;
+    height: auto;
+    background-image: url("../img/moon2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: static;
+    bottom:0;
+  }
+  
+  .infobox {
+    margin-top: -10px !important;
+    display: flex !important;
+    
+  }
+  
+  
+  .black-text1 {
+      margin: 1rem !important;
+      color: color(blackbasic);
+    }
+  
+  
+  
+  #footer-content {
+    margin-bottom: -30%;
+      img {
+        height: 50px;
+        width: auto;
+      }
+  }
+  
+  @media only screen and (max-width: 399px) {
+    .page-footer{ 
+      height: 100px !important;
+    
+    }
+    #footer-content {
+        img {
+          height: 2em;
+          width: auto;
+          margin-bottom: -10%
+        }
+    }
+  
+  }
+  
+  @media only screen and (min-width: 400px) {
+    .page-footer{ 
+      height: 130px !important;
+    }
+    #footer-content img{
+        height: 3em;
+        width: auto;
+      }
+    #logo {
+      height: 80px !important;
+      width: 80px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 490px) {
+    nav ul li a {
+      font-size: 1.5em !important;
+    }
+    nav ul li {
+      margin-top: 15px;
+    }
+      #logo {
+      height: 50px !important;
+      width: 50px !important;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    nav ul a {
+      font-size: 2.3em !important;
+    }
+
+    .sun {
+        height: 50px;
+        width: 50px;
+        margin-top: -25px;
+        margin-left: -25px;
+      }
+      
+      .mercury {
+        height: 60px;
+        width: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+      }
+
+      .mercury:before {
+        height: 13px;
+        width: 13px;
+        margin-top: -8px;
+        margin-left: -8px;
+      }
+      
+      .venus {
+        height: 120px;
+        width: 120px;
+        margin-top: -60px;
+        margin-left: -60px;
+      }
+
+      .venus:before {
+        height: 19px;
+        width: 19px;
+        margin-top: -10px;
+        margin-left: -10px;
+      }
+
+      
+      .earth {
+        height: 180px;
+        width: 180px;
+        margin-top: -90px;
+        margin-left: -90px;
+      }
+
+      .earth:before {
+        height: 19px;
+        width: 19px;
+        margin-top: -11px;
+        margin-left: -11px;
+      }
+      
+      .mars {
+        height: 240px;
+        width: 240px;
+        margin-top: -120px;
+        margin-left: -120px;
+      }
+
+      .mars:before {
+        height: 17px;
+        width: 17px;
+        margin-top: -8px;
+        margin-left: -8px;
+      }
+      
+      .jupiter {
+        height: 300px;
+        width: 300px;
+        margin-top: -150px;
+        margin-left: -150px;
+      }
+
+      .jupiter:before {
+        height: 35px;
+        width: 35px;
+        margin-top: -18px;
+        margin-left: -18px;
+      }
+      
+      .saturn {
+        height: 360px;
+        width: 360px;
+        margin-top: -180px;
+        margin-left: -180px;
+      }
+
+      .saturn:before {
+        height: 60px;
+        width: 60px;
+        margin-top: -14px;
+        margin-left: -14px;
+      }
+      
+      .uranus {
+        height: 420px;
+        width: 420px;
+        margin-top: -210px;
+        margin-left: -210px;
+      }
+
+      .uranus:before {
+        height: 22px;
+        width: 22px;
+        margin-top: -13px;
+        margin-left: -13px;
+      }
+      
+      .neptune {
+        height: 480px;
+        width: 480px;
+        margin-top: -240px;
+        margin-left: -240px;
+      }      
+
+      .neptune:before {
+        height: 22px;
+        width: 22px;
+        margin-top: -13px;
+        margin-left: -13px;
+      }
+      
+      .pluto {
+        height: 540px;
+        width: 540px;
+        margin-top: -270px;
+        margin-left: -270px;
+      }
+
+      .pluto:before {
+        height: 12px;
+        width: 12px;
+        margin-top: -6px;
+        margin-left: -6px;
+      }
+
+  }
+
+  @media only screen and (min-width: 680px) {
+      
+    .sun {
+        height: 140px;
+        width: 140px;
+        margin-top: -70px;
+        margin-left: -70px;
+      }
+      
+      .mercury {
+        height: 160px;
+        width: 160px;
+        margin-top: -80px;
+        margin-left: -80px;
+      }
+
+      .mercury:before {
+        height: 22px;
+        width: 22px;
+        margin-top: -8px;
+        margin-left: -8px;
+      }
+      
+      .venus {
+        height: 220px;
+        width: 220px;
+        margin-top: -110px;
+        margin-left: -110px;
+      }
+
+      .venus:before {
+        height: 27px;
+        width: 27px;
+        margin-top: -13px;
+        margin-left: -13px;
+      }
+
+      
+      .earth {
+        height: 280px;
+        width: 280px;
+        margin-top: -140px;
+        margin-left: -140px;
+      }
+
+      .earth:before {
+        height: 27px;
+        width: 27px;
+        margin-top: -15px;
+        margin-left: -15px;
+      }
+      
+      .mars {
+        height: 340px;
+        width: 340px;
+        margin-top: -170px;
+        margin-left: -170px;
+      }
+
+      .mars:before {
+        height: 22px;
+        width: 22px;
+        margin-top: -10px;
+        margin-left: -10px;
+      }
+      
+      .jupiter {
+        height: 400px;
+        width: 400px;
+        margin-top: -200px;
+        margin-left: -200px;
+      }
+
+      .jupiter:before {
+        height: 47px;
+        width: 47px;
+        margin-top: -25px;
+        margin-left: -25px;
+      }
+      
+      .saturn {
+        height: 460px;
+        width: 460px;
+        margin-top: -230px;
+        margin-left: -230px;
+      }
+
+      .saturn:before {
+        height: 73px;
+        width: 73px;
+        margin-top: -16px;
+        margin-left: -16px;
+      }
+      
+      .uranus {
+        height: 520px;
+        width: 520px;
+        margin-top: -260px;
+        margin-left: -260px;
+      }
+
+      .uranus:before {
+        height: 30px;
+        width: 30px;
+        margin-top: -17px;
+        margin-left: -17px;
+      }
+      
+      .neptune {
+        height: 580px;
+        width: 580px;
+        margin-top: -290px;
+        margin-left: -290px;
+      }      
+
+      .neptune:before {
+        height: 30px;
+        width: 30px;
+        margin-top: -17px;
+        margin-left: -17px;
+      }
+      
+      .pluto {
+        height: 640px;
+        width: 640px;
+        margin-top: -320px;
+        margin-left: -320px;
+      }
+
+      .pluto:before {
+        height: 20px;
+        width: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+      }
+  }
+  
+  
+  @media only screen and (min-width: 768px) {
+    .page-footer{ 
+      height: 180px !important;  
+    }
+    #footer-content img{
+      height: 4.5em;
+      width: auto;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 900px) {
+    .page-footer{ 
+      height: 250px !important;  
+    }
+    #footer-content {
+      padding-top: 90px;
+    }
+    #footer-content img{
+      height: 5em;
+      width: auto;
+      margin-bottom: 10%
+    }
+    #logo {
+      height: 110px !important;
+      width: 110px !important;
+    }
+  }
+  
+  @media only screen and (min-width: 1300px) {
+    .page-footer{ 
+      height: 300px !important;  
+    }
+    #footer-content img{
+      height: 7em;
+      width: auto;
+      margin-bottom: 10%
+    }
+  }
+  
+  
+  @media only screen and (min-width: 1700px) {
+    .page-footer{ 
+      height: 300px !important;  
+    }
+    #footer-content img{
+      height: 7em;
+      width: auto;
+      margin-bottom: 25%;
+    }
+  }
