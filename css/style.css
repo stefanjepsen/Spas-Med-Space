@@ -176,6 +176,10 @@ nav ul li {
     width: auto;
     margin-bottom: 10%;
   }
+
+  .infobox {
+    font-size: 14px !important;
+  }
 }
 @media only screen and (min-width: 1700px) {
   .page-footer {
