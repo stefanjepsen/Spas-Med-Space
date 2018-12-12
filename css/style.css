@@ -34,8 +34,7 @@ nav ul li {
 }
 
 #nav-mobile {
-  margin-left: 5.5rem !important;
-  float: none !important;
+  margin: auto !important;
   display: inline-block !important;
 }
 
