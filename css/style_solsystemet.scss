@@ -52,16 +52,6 @@ $fonts: (
   header {
     height: 150px;
   }
-
-  
-h3 {
-  font-family: "Handlee", cursive !important;
-  color: #fff200 !important;
-  text-align: center;
-  margin: 0 !important;
-  text-transform: uppercase;
-  font-size: 2em !important; 
-}
   
   #logo {
     position: absolute;
@@ -129,6 +119,10 @@ h3 {
   h3 {
     font-family: font-family(header1) !important;
     color: color(secondary) !important;
+    text-align: center;
+    margin: 0 !important;
+    text-transform: uppercase;
+    font-size: 2em !important; 
   }
 
  #outside-solar-syst {
@@ -378,12 +372,23 @@ h3 {
     }
   }
 
-  #text-box {
+  #transparant_box {
     width: 100% !important;
     max-width: 100% !important;
-    height: 400px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.514);
     margin: 50px 0;
+  }
+
+  #text_box {
+    width: 70% !important;
+    max-width: 1280px !important;
+    margin: auto !important;
+    padding: 50px;
+  }
+
+  #text_inside_box {
+    padding-top: 30px;
   }
 
   .page-footer{ 

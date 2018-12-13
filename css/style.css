@@ -56,7 +56,6 @@ nav ul a {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   display: block;
-  margin-right: -17px;
   cursor: pointer;
   font-size: 3em !important;
   font-family: "Handlee", cursive !important;
