@@ -44,21 +44,39 @@ body {
   color: white;
 }
 
-
-
 main {
   flex: 1 0 auto;
 }
 
-header {
-  height: 150px;
-}
+  header {
+    height: 150px;
+  }
 
 #logo {
   position: absolute;
   top: 20px;
   left: 20px;
 }
+
+h3 {
+  font-family: font-family(header1) !important;
+  color: color(secondary) !important;
+  text-align: center;
+  margin: 0 !important;
+  text-transform: uppercase;
+  font-size: 2em !important; 
+}
+
+
+#text-box {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.514);
+  margin: 50px 0;
+}
+
+
 
 nav ul a {
   -webkit-transition: background-color 0.3s;
@@ -90,6 +108,217 @@ nav ul li {
     
 }
 */
+#outside-solar-syst {
+  position: relative;
+  height: 800px;
+}
+
+.solar-syst div {
+ top: 50%;
+ left: 50%;
+ position: absolute;
+ z-index: 999;
+}
+
+////////////////////////// Planets
+.neptune {
+  height: 130px;
+  width: 130px;
+  background-image: url("../img/neptun.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -15px;
+  margin-left: -15px;
+  top:19% !important;
+  left:5% !important;
+  -webkit-animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+  animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+.jupiter {
+  height: 200px;
+  width: 200px;
+  background-image: url("../img/jupiter.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -20px;
+  margin-left: -20px;
+  top:71% !important;
+  left:9% !important;
+  -webkit-animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both; animation: rotate-center 25s linear infinite both;
+  animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both; animation: rotate-center 25s linear infinite both;
+ 
+}
+.earth {
+  height: 93px;
+  width: 90px;
+  background-image: url("../img/earth.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  margin-left: -10px;
+  top:10% !important;
+  left:37% !important;
+  -webkit-animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+  animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+.venus {
+  height: 80px;
+  width: 80px;
+  background-image: url("../img/venus.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  margin-left: -10px;
+  top:49% !important;
+  left:14% !important;
+  -webkit-animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+  animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+.sun {
+  height: 320px;
+  width: 320px;
+  background-image: url("../img/sun.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -160px !important;
+  margin-left: -160px !important;
+  top:50% !important;
+  left:50% !important;
+  -webkit-animation: rotate-center 25s linear infinite both;
+	        animation: rotate-center 25s linear infinite both;
+}
+
+
+.mercury {
+  height: 70px;
+  width: 70px;
+  background-image: url("../img/merkur.png");
+  margin-top: -8px;
+  margin-left: -8px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top:31% !important;
+  left:74% !important;
+  -webkit-animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+  animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+.mars{
+  height: 75px;
+  width: 75px;
+  background-image: url("../img/mars.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+  margin-left: -10px;
+  top:83% !important;
+  left:58% !important;
+  -webkit-animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+  animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+.saturn {
+  height: 110px;
+  width: 225px;
+  background-image: url("../img/saturn.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -15px;
+  margin-left: -15px;
+  top:5% !important;
+  left:68% !important;
+  -webkit-animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+  animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+
+.uranus{
+  height: 120px;
+  width: 120px;
+  background-image: url("../img/uranus.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -15px;
+  margin-left: -15px;
+  top:71% !important;
+  left:82% !important;
+  -webkit-animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+  animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+.pluto {
+  height: 45px;
+  width: 45px;
+  background-image: url("../img/pluto.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -8px;
+  margin-left: -8px;
+  top:50% !important;
+  left:90% !important;
+  -webkit-animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+	        animation: slide-bl 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+
+
+
+//////////////////////////////////////////
+
+@-webkit-keyframes slide-bl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px) translateX(-100px);
+            transform: translateY(100px) translateX(-100px);
+  }
+}
+@keyframes slide-bl {
+  0% {
+    -webkit-transform: translateY(0) translateX(0);
+            transform: translateY(0) translateX(0); 
+  }
+  100% {
+    -webkit-transform: translateY(100px) translateX(-100px);
+            transform: translateY(100px) translateX(-100px);
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-12-13 12:48:42
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
 .page-footer{ 
   background-color: #0000 !important;
   width: 100%;
@@ -176,6 +405,14 @@ nav ul li {
   nav ul a {
     font-size: 2.3em !important;
   }
+    .black-text1 {
+      margin-top: 5em !important;
+    }
+    #footer-content img{
+      height: 1.5em;
+      width: auto;
+      margin-top: 3.5em !important;
+    }
 }
 
 
@@ -187,7 +424,9 @@ nav ul li {
     height: 2.5em;
     width: auto;
   }
-
+  .black-text1 {
+    font-size: 1.5em !important;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -205,6 +444,7 @@ nav ul li {
     height: 110px !important;
     width: 110px !important;
   }
+  
 }
 
 @media only screen and (min-width: 1300px) {
@@ -229,9 +469,22 @@ nav ul li {
   #footer-content img{
     height: 6em;
     width: auto;
-    margin-bottom: 25%;
   }
 }
+////////////////////////////////// Key frames
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 .row > div {
