@@ -25,26 +25,39 @@ header {
   height: 150px;
 }
 
-h3 {
-  font-family: "Handlee", cursive !important;
-  color: #fff200 !important;
-  text-align: center;
-  margin: 0 !important;
-  text-transform: uppercase;
-  font-size: 2em !important;
-}
-
 #logo {
   position: absolute;
   top: 20px;
   left: 20px;
 }
 
+a.dropdown-trigger.btn {
+  background-color: rgba(255, 255, 255, 0) !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+#dropdown {
+  background-color: rgba(255, 242, 0, 0.829);
+  font-size: 10px !important;
+  overflow-y: visible;
+}
+
+#dropdown li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#dropdown li:hover {
+  background-color: #fff200;
+}
+
 nav ul a {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   display: block;
-  margin-right: -17px;
   cursor: pointer;
   font-size: 3em !important;
   font-family: "Handlee", cursive !important;
@@ -76,6 +89,10 @@ main {
 h3 {
   font-family: "Handlee", cursive !important;
   color: #fff200 !important;
+  text-align: center;
+  margin: 0 !important;
+  text-transform: uppercase;
+  font-size: 2em !important;
 }
 
 #outside-solar-syst {
@@ -331,6 +348,25 @@ h3 {
     transform: rotate(-360deg);
   }
 }
+#transparant_box {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.514);
+  margin: 50px 0;
+}
+
+#text_box {
+  width: 70% !important;
+  max-width: 1280px !important;
+  margin: auto !important;
+  padding: 50px;
+}
+
+#text_inside_box {
+  padding-top: 30px;
+}
+
 .page-footer {
   background-color: #0000 !important;
   width: 100%;
@@ -558,14 +594,6 @@ h3 {
     margin-left: -6px;
   }
 }
-#text-box {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: 400px;
-  background-color: rgba(255, 255, 255, 0.514);
-  margin: 50px 0;
-}
-
 @media only screen and (min-width: 680px) {
   .sun {
     height: 140px;
@@ -749,7 +777,6 @@ h3 {
   #footer-content img {
     height: 7em;
     width: auto;
-    margin-bottom: 25%;
   }
 }
 

@@ -21,7 +21,19 @@
           <nav class="transparent z-depth-0">
            <div class="nav-wrapper">
             <ul id="nav-mobile">
-                <li><a href="solsystemet.html">Solsystemet</a></li>
+                <li><a class='dropdown-trigger btn' href="solsystemet.html" data-target='dropdown'>Solsystemet</a></li>   
+                <ul id='dropdown' class='dropdown-content'>
+                        <li><a href="solen.html">Solen</a></li>
+                        <li><a href="merkur.html">Merkur</a></li>
+                        <li><a href="venus.html">Venus</a></li>
+                        <li><a href="jorden.html">Jorden</a></li>
+                        <li><a href="jorden.html">Mars</a></li>
+                        <li><a href="jupiter.html">Jupiter</a></li>
+                        <li><a href="saturn.html">Saturn</a></li>
+                        <li><a href="uranus.html">Uranus</a></li>
+                        <li><a href="neptun.html">Neptun</a></li>
+                        <li><a href="pluto.html">Pluto</a></li>
+                      </ul>
                 <li><a href="Link her">|</a></li>
                 <li><a id="spil" href="Link her">Spil & Film</a></li>
             </ul>
@@ -53,9 +65,28 @@
     </div>
 
   
-    <div id="text-box" class="container col s12">
-        <div class="row">
-          </div></div>
+    <div id="transparant_box" class="container col s12">
+        <div id="text_box" class="row">
+          <div class="col s12">
+            <h3>Overskrift</h3>
+          </div>
+          <div class="col s12">
+            <p id="text_inside_box"> tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+            tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst tekst 
+          </p>
+          </div>
+        </div>
+    </div>
 
   </main>
 
@@ -72,7 +103,7 @@
           </div>
           
           <div class="col l6 s12 right-align ">
-              <a href="https://illvid.dk/"><img src="img/illustreret-videnskab.png"> </a>
+              <a href="https://illvid.dk/" target="_blank"><img src="img/illustreret-videnskab.png"> </a>
           </div>
         </div>
       </div>
@@ -83,5 +114,6 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

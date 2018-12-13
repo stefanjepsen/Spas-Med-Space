@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Handlee");
+
+$colors: (
+  primary: #005dff,
+  primary-light: lighten(#005dff, 40%),
+  primary-dark: darken(#005dff, 40%),
+  secondary: hsl(57, 100%, 50%),
+  basic: #fff,
+  blackbasic: black
+);
+
+$fonts: (
+  header1: (
+    "Handlee",
+    cursive
+  ),
+  text1: (
+    "Roboto",
+    sans-serif
+  )
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function font-family($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.png");
+  background-size: 60%;
+  font-family: font-family(text1) !important;
+  z-index: -1;
+  display: flex !important;
+  min-height: 100vh !important;
+  flex-direction: column;
+  color: white;
+}
+
+
+
+main {
+  flex: 1 0 auto;
+}
+
+header {
+  height: 150px;
+}
+
+#logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+
+a.dropdown-trigger.btn {
+  background-color: rgba(255, 255, 255, 0) !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+#dropdown {
+  background-color: hsla(57, 100%, 50%, 0.829);
+  overflow-y: visible;
+}
+
+#dropdown li {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 10px !important;
+}
+
+
+#dropdown li:hover {
+background-color: hsl(57, 100%, 50%);
+}
+
+nav ul a {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  display: block;
+  cursor: pointer;
+  font-size: 3em !important;
+  font-family: font-family(header1) !important;
+  color: color(basic) !important;
+
+}
+nav ul li {
+  margin-top: 30px;
+  color: color(secondary) !important;
+}
+
+#nav-mobile {
+  margin:auto !important;
+  display: inline-block !important;  
+}
+
+h3 {
+    font-family: font-family(header1) !important;
+    color: color(secondary) !important;
+    text-align: center;
+    margin: 0 0 40px 0 !important;
+    text-transform: uppercase;
+    font-size: 2em !important; 
+  }
+
+#merkur_img {
+    max-width: 75%;
+}
+
+#merkur_facts {
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+/*
+.container1 {
+  margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    display: flex;
+    
+}
+*/
+.page-footer{ 
+  background-color: #0000 !important;
+  width: 100%;
+  height: auto;
+  background-image: url("../img/moon2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: static;
+  bottom:0;
+  padding: 0 !important;
+}
+
+.infobox {
+  margin-top: -10px !important;
+  display: flex !important;
+  
+}
+
+
+.black-text1 {
+    margin: 1rem !important;
+    color: color(blackbasic);
+  }
+
+
+
+#footer-content {
+  margin-bottom: -30%;
+    img {
+      height: 50px;
+      width: auto;
+    }
+}
+
+@media only screen and (min-width: 0px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .page-footer{ 
+    height: 100px !important;
+  
+  }
+  #footer-content {
+      img {
+        height: 1em;
+        width: auto;
+        margin-bottom: -10%
+      }
+  }
+
+}
+
+@media only screen and (min-width: 400px) {
+  .page-footer{ 
+    height: 130px !important;
+  }
+  #footer-content img{
+      height: 1.5em;
+      width: auto;
+    }
+  #logo {
+    height: 80px !important;
+    width: 80px !important;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+ 
+    header {
+        height: 80px !important;
+      }
+    nav ul li a {
+    font-size: 1.5em !important;
+  }
+  nav ul li {
+    margin-top: 15px;
+  }
+    #logo {
+    height: 50px !important;
+    width: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul a {
+    font-size: 2.3em !important;
+  }
+
+  header {
+    height: 120px;
+  }
+
+  h3 {
+    font-size: 1.3em !important;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .page-footer{ 
+    height: 180px !important;  
+  }
+  #footer-content img{
+    height: 2.5em;
+    width: auto;
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+  .page-footer{ 
+    height: 250px !important;  
+  }
+  #footer-content {
+    padding-top: 90px;
+  }
+  #footer-content img{
+    height: 4em;
+    width: auto;
+  }
+  #logo {
+    height: 110px !important;
+    width: 110px !important;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .page-footer{ 
+    height: 300px !important;  
+  }
+  #footer-content img{
+    height: 5em;
+    width: auto;
+    margin-bottom: 10%
+  }
+  .infobox {
+    font-size: 14px !important;
+  }
+}
+
+
+@media only screen and (min-width: 1700px) {
+  .page-footer{ 
+    height: 300px !important;  
+  }
+  #footer-content img{
+    height: 6em;
+    width: auto;
+    margin-bottom: 25%;
+  }
+}
