@@ -51,6 +51,14 @@ nav ul a {
   color: #fff !important;
 }
 
+#spil {
+  color: rgba(255, 255, 255, 0.315) !important;
+}
+
+#spil:hover {
+  color: white !important;
+}
+
 nav ul li {
   margin-top: 30px;
   color: #fff200 !important;
@@ -330,6 +338,7 @@ h3 {
   background-image: url("../img/moon2.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  padding: 0 !important;
   position: static;
   bottom: 0;
 }
@@ -549,6 +558,14 @@ h3 {
     margin-left: -6px;
   }
 }
+#text-box {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.514);
+  margin: 50px 0;
+}
+
 @media only screen and (min-width: 680px) {
   .sun {
     height: 140px;
