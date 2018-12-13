@@ -29,6 +29,29 @@ header {
   left: 20px;
 }
 
+a.dropdown-trigger.btn {
+  background-color: rgba(255, 255, 255, 0) !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+#dropdown {
+  background-color: rgba(255, 242, 0, 0.829);
+  overflow-y: visible;
+}
+
+#dropdown li {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 10px !important;
+}
+
+#dropdown li:hover {
+  background-color: #fff200;
+}
+
 nav ul a {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
