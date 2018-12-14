@@ -97,8 +97,7 @@ nav ul li {
   margin-left: -15px;
   top: 19% !important;
   left: 5% !important;
-  -webkit-animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
+  animation: orbit1 linear infinite alternate-reverse 14s;
 }
 
 .jupiter {
@@ -111,10 +110,7 @@ nav ul li {
   margin-left: -20px;
   top: 71% !important;
   left: 9% !important;
-  -webkit-animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  animation: rotate-center 25s linear infinite both;
-  animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  animation: rotate-center 25s linear infinite both;
+  animation: orbit2 linear infinite 19s;
 }
 
 .earth {
@@ -127,8 +123,7 @@ nav ul li {
   margin-left: -10px;
   top: 10% !important;
   left: 37% !important;
-  -webkit-animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
+  animation: orbit1 linear infinite 15s;
 }
 
 .venus {
@@ -141,8 +136,7 @@ nav ul li {
   margin-left: -10px;
   top: 49% !important;
   left: 14% !important;
-  -webkit-animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
+  animation: slide-tr 7s cubic-bezier(0.47, -4, 0.745, 0.115) infinite alternate-reverse both;
 }
 
 .sun {
@@ -155,8 +149,7 @@ nav ul li {
   margin-left: -160px !important;
   top: 50% !important;
   left: 50% !important;
-  -webkit-animation: rotate-center 25s linear infinite both;
-  animation: rotate-center 25s linear infinite both;
+  animation: spin 25s linear infinite both;
 }
 
 .mercury {
@@ -169,8 +162,7 @@ nav ul li {
   background-repeat: no-repeat;
   top: 31% !important;
   left: 74% !important;
-  -webkit-animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
+  animation: orbit2 linear infinite 12s;
 }
 
 .mars {
@@ -183,7 +175,6 @@ nav ul li {
   margin-left: -10px;
   top: 83% !important;
   left: 58% !important;
-  -webkit-animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
   animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
 }
 
@@ -197,8 +188,7 @@ nav ul li {
   margin-left: -15px;
   top: 5% !important;
   left: 68% !important;
-  -webkit-animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
+  animation: slide-tr 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate-reverse both;
 }
 
 .uranus {
@@ -210,9 +200,8 @@ nav ul li {
   margin-top: -15px;
   margin-left: -15px;
   top: 71% !important;
-  left: 82% !important;
-  -webkit-animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
+  left: 77% !important;
+  animation: orbit2 linear infinite 10s;
 }
 
 .pluto {
@@ -225,57 +214,177 @@ nav ul li {
   margin-left: -8px;
   top: 50% !important;
   left: 90% !important;
-  -webkit-animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
-  animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
+  animation: slide 2s linear infinite alternate both;
 }
 
-@-webkit-keyframes slide-bl {
+.rocket-man {
+  height: 85px;
+  width: 85px;
+  background-image: url("../img/space-man.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -8px;
+  margin-left: -8px;
+  top: 60% !important;
+  left: 90% !important;
+  animation: Rocket linear 10s;
+  z-index: -1;
+  opacity: 0;
+}
+
+.rocket-man2 {
+  height: 85px;
+  width: 85px;
+  background-image: url("../img/space-man.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 600px;
+  z-index: 9999;
+  animation: wobble-ver-right 10.8s linear infinite both;
+}
+
+@keyframes Rocket {
+  0% {
+    opacity: 1;
+    transform: translate(-2000px, 150px);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(320px, 150px);
+  }
+  32% {
+    opacity: 1;
+    transform: translate(-1380px, -680px);
+  }
+  44% {
+    opacity: 1;
+    transform: translate(-500px, 100px);
+  }
+  63% {
+    opacity: 1;
+    transform: translate(50px, -200px);
+  }
+  93% {
+    opacity: 1;
+    transform: translate(-73px, -500px);
+  }
+  99% {
+    transform: translate(-3px, -600px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-100px, -150px);
+  }
+}
+@keyframes wobble-ver-right {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+  0% {
+    transform: translateY(-30px) rotate(6deg);
+  }
+  30% {
+    transform: translateY(-30px) rotate(6deg);
+  }
+  30% {
+    transform: translateY(15px) rotate(-6deg);
+  }
+  45% {
+    transform: translateY(-15px) rotate(3.6deg);
+  }
+  60% {
+    transform: translateY(9px) rotate(-2.4deg);
+  }
+  75% {
+    transform: translateY(-6px) rotate(1.2deg);
+  }
+}
+@keyframes orbit1 {
+  0% {
+    transform: translate(-56px, -56px);
+  }
+  20% {
+    transform: translate(-75px, -31px);
+  }
+  40% {
+    transform: translate(-130px, 96px);
+  }
+  61% {
+    transform: translate(-95px, 21px);
+  }
+  70% {
+    transform: translate(-50px, 12px);
+  }
+  100% {
+    transform: translate(-156px, -60px);
+  }
+}
+@keyframes orbit2 {
+  0% {
+    transform: translate(-126px, 131px);
+  }
+  25% {
+    transform: translate(82px, 283px);
+  }
+  51% {
+    transform: translate(284px, 31px);
+  }
+  75% {
+    transform: translate(92px, -21px);
+  }
+  88% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(-126px, 131px);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-30px) translateX(70%);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(365deg);
+  }
+}
+@-webkit-keyframes slide-tl {
   0% {
     -webkit-transform: translateY(0) translateX(0);
     transform: translateY(0) translateX(0);
   }
   100% {
-    -webkit-transform: translateY(100px) translateX(-100px);
-    transform: translateY(100px) translateX(-100px);
+    -webkit-transform: translateY(-100px) translateX(-100px);
+    transform: translateY(-100px) translateX(-100px);
   }
 }
-@keyframes slide-bl {
+@keyframes slide-tl {
   0% {
     -webkit-transform: translateY(0) translateX(0);
     transform: translateY(0) translateX(0);
   }
   100% {
-    -webkit-transform: translateY(100px) translateX(-100px);
-    transform: translateY(100px) translateX(-100px);
+    -webkit-transform: translateY(-100px) translateX(-100px);
+    transform: translateY(-100px) translateX(-100px);
   }
 }
-/* ----------------------------------------------
- * Generated by Animista on 2018-12-13 12:48:42
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-/**
- * ----------------------------------------
- * animation rotate-center
- * ----------------------------------------
- */
-@-webkit-keyframes rotate-center {
+@keyframes slide-tr {
   0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+    transform: translateY(0) translateX(0);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    transform: translateY(-100px) translateX(100px);
   }
 }
 .page-footer {
