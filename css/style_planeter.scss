@@ -114,11 +114,15 @@ h3 {
     font-size: 2em !important; 
   }
 
-#merkur_img {
+#planet_img {
     max-width: 75%;
 }
 
-#merkur_facts {
+#planet2_img {
+    max-width: 85%;
+}
+
+#planet_facts {
     background-color: rgba(255, 255, 255, 0.747);
 }
 
@@ -160,7 +164,7 @@ h3 {
 #footer-content {
   margin-bottom: -30%;
     img {
-      height: 50px;
+      height: 50px !important;
       width: auto;
     }
 }

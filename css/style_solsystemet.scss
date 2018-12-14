@@ -6,7 +6,8 @@ $colors: (
   primary-light: lighten(#005dff, 40%),
   primary-dark: darken(#005dff, 40%),
   secondary: #fff200,
-  basic: #fff
+  basic: #fff,
+  blackbasic: black
 );
 
 $fonts: (
@@ -42,7 +43,7 @@ $fonts: (
   body {
     background-image: url("../img/background.png");
     background-size: 60%;
-    font-family: "Roboto", sans-serif !important;
+    font-family: font-family(text1) !important;
     color: #fff;
     z-index: -1;
     min-height: 100vh !important;
@@ -398,9 +399,9 @@ $fonts: (
     background-image: url("../img/moon2.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 0 !important;
     position: static;
     bottom:0;
+    padding: 0 !important;
   }
   
   .infobox {
@@ -420,7 +421,7 @@ $fonts: (
   #footer-content {
     margin-bottom: -30%;
       img {
-        height: 50px;
+        height: 50px !important;
         width: auto;
       }
   }
