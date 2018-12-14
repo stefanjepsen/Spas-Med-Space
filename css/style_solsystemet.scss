@@ -117,6 +117,14 @@ $fonts: (
     flex: 1 0 auto;
   }
 
+  
+  #spaceman {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    animation: slide 2s linear infinite alternate both;
+  }
+
   h3 {
     font-family: font-family(header1) !important;
     color: color(secondary) !important;
@@ -373,12 +381,25 @@ $fonts: (
     }
   }
 
+  @keyframes slide {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    100% {
+      transform: translateY(20px) translateX(0);
+    }
+  }
+
   #transparant_box {
     width: 100% !important;
     max-width: 100% !important;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.781);
+    background-color: #fff200d3;
     margin: 50px 0;
+
+    h3 {
+      color: black !important;
+    }
   }
 
   #text_box {
@@ -390,7 +411,7 @@ $fonts: (
 
   #text_inside_box {
     padding-top: 30px;
-    color: #000000;
+    color: black;
   }
 
   .page-footer{ 

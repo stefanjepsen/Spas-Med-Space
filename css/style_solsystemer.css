@@ -90,7 +90,6 @@ main {
   position: fixed;
   bottom: 20px;
   right: 25px;
-  animation: slide 2s linear infinite alternate both;
 }
 
 h3 {
@@ -355,23 +354,12 @@ h3 {
     transform: rotate(-360deg);
   }
 }
-@keyframes slide {
-  0% {
-    transform: translateY(0) translateX(0);
-  }
-  100% {
-    transform: translateY(20px) translateX(0);
-  }
-}
 #transparant_box {
   width: 100% !important;
   max-width: 100% !important;
   height: auto;
-  background-color: #fff200d3;
+  background-color: rgba(255, 255, 255, 0.781);
   margin: 50px 0;
-}
-#transparant_box h3 {
-  color: black !important;
 }
 
 #text_box {
@@ -383,7 +371,7 @@ h3 {
 
 #text_inside_box {
   padding-top: 30px;
-  color: black;
+  color: #000000;
 }
 
 .page-footer {
@@ -800,4 +788,4 @@ h3 {
   }
 }
 
-/*# sourceMappingURL=style_solsystemet.css.map */
+/*# sourceMappingURL=style_solsystemer.css.map */

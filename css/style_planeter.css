@@ -72,6 +72,13 @@ nav ul li {
   display: inline-block !important;
 }
 
+#spaceman {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  animation: slide 2s linear infinite alternate both;
+}
+
 h3 {
   font-family: "Handlee", cursive !important;
   color: #fff200 !important;
@@ -146,6 +153,14 @@ h3 {
   width: auto;
 }
 
+@keyframes slide {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(20px) translateX(0);
+  }
+}
 @media only screen and (min-width: 0px) {
   * {
     font-size: 14px;
