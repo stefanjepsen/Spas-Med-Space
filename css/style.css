@@ -97,7 +97,7 @@ nav ul li {
   margin-left: -15px;
   top: 19% !important;
   left: 5% !important;
-  animation: orbit1 linear infinite alternate-reverse 14s;
+  animation: neptune linear infinite 15s;
 }
 
 .jupiter {
@@ -110,7 +110,7 @@ nav ul li {
   margin-left: -20px;
   top: 71% !important;
   left: 9% !important;
-  animation: orbit2 linear infinite 19s;
+  animation: jupiter linear infinite 19s;
 }
 
 .earth {
@@ -123,7 +123,7 @@ nav ul li {
   margin-left: -10px;
   top: 10% !important;
   left: 37% !important;
-  animation: orbit1 linear infinite 15s;
+  animation: orbit1 linear infinite alternate both 15s;
 }
 
 .venus {
@@ -136,7 +136,7 @@ nav ul li {
   margin-left: -10px;
   top: 49% !important;
   left: 14% !important;
-  animation: slide-tr 7s cubic-bezier(0.47, -4, 0.745, 0.115) infinite alternate-reverse both;
+  animation: slide-tr 14s cubic-bezier(0.47, -4, 0.745, 0.115) infinite alternate-reverse both;
 }
 
 .sun {
@@ -162,7 +162,7 @@ nav ul li {
   background-repeat: no-repeat;
   top: 31% !important;
   left: 74% !important;
-  animation: orbit2 linear infinite 12s;
+  animation: mercury linear infinite 20s;
 }
 
 .mars {
@@ -175,7 +175,7 @@ nav ul li {
   margin-left: -10px;
   top: 83% !important;
   left: 58% !important;
-  animation: slide-bl 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate both;
+  animation: mars linear infinite alternate-reverse 26s;
 }
 
 .saturn {
@@ -188,7 +188,7 @@ nav ul li {
   margin-left: -15px;
   top: 5% !important;
   left: 68% !important;
-  animation: slide-tr 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate-reverse both;
+  animation: saturn 13s linear infinite;
 }
 
 .uranus {
@@ -201,7 +201,7 @@ nav ul li {
   margin-left: -15px;
   top: 71% !important;
   left: 77% !important;
-  animation: orbit2 linear infinite 10s;
+  animation: slide 2s linear infinite alternate-reverse both;
 }
 
 .pluto {
@@ -238,69 +238,35 @@ nav ul li {
   background-image: url("../img/space-man.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  margin-left: 600px;
+  margin-left: 80%;
   z-index: 9999;
-  animation: wobble-ver-right 10.8s linear infinite both;
+  position: absolute;
 }
 
-@keyframes Rocket {
+@keyframes mars {
   0% {
-    opacity: 1;
-    transform: translate(-2000px, 150px);
+    transform: translate(106px, -52px);
   }
-  10% {
-    opacity: 1;
-    transform: translate(320px, 150px);
+  21% {
+    transform: translate(148px, -167px);
   }
-  32% {
-    opacity: 1;
-    transform: translate(-1380px, -680px);
+  40% {
+    transform: translate(5px, -179px);
   }
-  44% {
-    opacity: 1;
-    transform: translate(-500px, 100px);
-  }
-  63% {
-    opacity: 1;
-    transform: translate(50px, -200px);
-  }
-  93% {
-    opacity: 1;
-    transform: translate(-73px, -500px);
-  }
-  99% {
-    transform: translate(-3px, -600px);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-100px, -150px);
-  }
-}
-@keyframes wobble-ver-right {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0) rotate(0);
-    transform-origin: 50% 50%;
-  }
-  0% {
-    transform: translateY(-30px) rotate(6deg);
-  }
-  30% {
-    transform: translateY(-30px) rotate(6deg);
-  }
-  30% {
-    transform: translateY(15px) rotate(-6deg);
-  }
-  45% {
-    transform: translateY(-15px) rotate(3.6deg);
+  50% {
+    transform: translate(-134px, -80px);
   }
   60% {
-    transform: translateY(9px) rotate(-2.4deg);
+    transform: translate(-102px, 51px);
   }
-  75% {
-    transform: translateY(-6px) rotate(1.2deg);
+  80% {
+    transform: translate(30px, 29px);
+  }
+  99% {
+    transform: translate(114px, -51px);
+  }
+  100% {
+    transform: translate(108px, -50px);
   }
 }
 @keyframes orbit1 {
@@ -341,6 +307,68 @@ nav ul li {
   }
   100% {
     transform: translate(-126px, 131px);
+  }
+}
+@keyframes jupiter-tablet {
+  0% {
+    transform: translate(-100px, 121px);
+  }
+  51% {
+    transform: translate(114px, 231px);
+  }
+  75% {
+    transform: translate(92px, -21px);
+  }
+  100% {
+    transform: translate(-126px, 131px);
+  }
+}
+@keyframes jupiter {
+  0% {
+    transform: translate(20px, 20px);
+  }
+  51% {
+    transform: translate(114px, 131px);
+  }
+  75% {
+    transform: translate(92px, -21px);
+  }
+  100% {
+    transform: translate(20px, 20px);
+  }
+}
+@keyframes mercury {
+  0% {
+    transform: translate(-100px, 220px);
+  }
+  25% {
+    transform: translate(-50px, 50px);
+  }
+  51% {
+    transform: translate(0px, 100px);
+  }
+  75% {
+    transform: translate(150px, 50px);
+  }
+  100% {
+    transform: translate(-100px, 220px);
+  }
+}
+@keyframes mercury-tablet {
+  0% {
+    transform: translate(80px, 50px);
+  }
+  25% {
+    transform: translate(100px, -50px);
+  }
+  51% {
+    transform: translate(50px, -70px);
+  }
+  75% {
+    transform: translate(-80px, -40px);
+  }
+  100% {
+    transform: translate(80px, 50px);
   }
 }
 @keyframes slide {
@@ -385,6 +413,57 @@ nav ul li {
   }
   100% {
     transform: translateY(-100px) translateX(100px);
+  }
+}
+@keyframes saturn {
+  0% {
+    transform: translate(0px, 125px);
+  }
+  25% {
+    transform: translate(-165px, 61px);
+  }
+  50% {
+    transform: translate(-170px, 89px);
+  }
+  75% {
+    transform: translate(-75px, 89px);
+  }
+  100% {
+    transform: translate(0px, 125px);
+  }
+}
+@keyframes neptune {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(190px, -61px);
+  }
+  50% {
+    transform: translate(220px, 89px);
+  }
+  75% {
+    transform: translate(75px, 45px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes neptune-tablet {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-90px, -61px);
+  }
+  50% {
+    transform: translate(-180px, -21px);
+  }
+  75% {
+    transform: translate(-120px, -40px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 .page-footer {
@@ -475,6 +554,84 @@ nav ul li {
     height: 1.5em;
     width: auto;
     margin-top: 3.5em !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .neptune {
+    height: 65px;
+    width: 65px;
+    margin-top: 30px;
+    margin-left: 134.5px;
+    animation: neptune-tablet linear infinite 15s;
+  }
+
+  .jupiter {
+    height: 100px;
+    width: 100px;
+    margin-top: -220px;
+    margin-left: 95px;
+    animation: jupiter-tablet 29s linear infinite alternate;
+  }
+
+  .earth {
+    height: 46.5px;
+    width: 45px;
+    margin-top: -5px;
+    margin-left: -5px;
+  }
+
+  .venus {
+    height: 40px;
+    width: 40px;
+    margin-top: -185px;
+    margin-left: 115px;
+  }
+
+  .sun {
+    height: 160px;
+    width: 160px;
+    margin-top: -200px !important;
+    margin-left: -80px !important;
+  }
+
+  .mercury {
+    height: 55px;
+    width: 55px;
+    margin-top: -4px;
+    margin-left: -4px;
+    top: 31% !important;
+    left: 74% !important;
+    animation: mercury-tablet linear infinite alternate-reverse 14s;
+  }
+
+  .mars {
+    height: 37.5px;
+    width: 37.5px;
+    margin-top: -5px;
+    margin-left: -5px;
+    top: 67% !important;
+    left: 62% !important;
+  }
+
+  .saturn {
+    height: 55px;
+    width: 112.5px;
+    margin-top: -7.5px;
+    margin-left: -7.5px;
+  }
+
+  .uranus {
+    height: 60px;
+    width: 60px;
+    margin-top: -7.5px;
+    margin-left: -7.5px;
+  }
+
+  .pluto {
+    height: 35.5px;
+    width: 35.5px;
+    margin-top: -4px;
+    margin-left: -4px;
   }
 }
 @media only screen and (min-width: 768px) {
