@@ -29,6 +29,61 @@ header {
   left: 20px;
 }
 
+a.dropdown-trigger.btn {
+  background-color: rgba(255, 255, 255, 0) !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+#dropdown {
+  background-color: rgba(255, 242, 0, 0.829);
+  overflow-y: visible;
+}
+
+#dropdown li {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 10px !important;
+}
+
+#dropdown li:hover {
+  background-color: #fff200;
+}
+
+nav ul a {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  display: block;
+  cursor: pointer;
+  font-size: 3em !important;
+  font-family: "Handlee", cursive !important;
+  color: #fff !important;
+}
+
+#spil {
+  color: rgba(255, 255, 255, 0.315) !important;
+}
+
+#spil:hover {
+  color: white !important;
+}
+
+nav ul li {
+  margin-top: 30px;
+  color: #fff200 !important;
+}
+
+#nav-mobile {
+  margin: auto !important;
+  display: inline-block !important;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 h3 {
   font-family: "Handlee", cursive !important;
   color: #fff200 !important;
