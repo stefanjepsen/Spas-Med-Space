@@ -124,7 +124,7 @@ h3 {
   margin-bottom: -30%;
 }
 #footer-content img {
-  height: 50px;
+  height: 50px !important;
   width: auto;
 }
 

@@ -374,9 +374,9 @@ h3 {
   background-image: url("../img/moon2.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 0 !important;
   position: static;
   bottom: 0;
+  padding: 0 !important;
 }
 
 .infobox {
@@ -386,13 +386,14 @@ h3 {
 
 .black-text1 {
   margin: 1rem !important;
+  color: black;
 }
 
 #footer-content {
   margin-bottom: -30%;
 }
 #footer-content img {
-  height: 50px;
+  height: 50px !important;
   width: auto;
 }
 
