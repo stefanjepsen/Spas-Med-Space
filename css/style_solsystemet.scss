@@ -377,7 +377,7 @@ $fonts: (
     width: 100% !important;
     max-width: 100% !important;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.514);
+    background-color: rgba(255, 255, 255, 0.781);
     margin: 50px 0;
   }
 
@@ -390,6 +390,7 @@ $fonts: (
 
   #text_inside_box {
     padding-top: 30px;
+    color: #000000;
   }
 
   .page-footer{ 

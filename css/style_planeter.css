@@ -93,6 +93,18 @@ h3 {
   background-color: rgba(255, 255, 255, 0.747);
 }
 
+#infographic {
+  max-width: 45%;
+}
+
+#infographic_size2 {
+  max-width: 70%;
+}
+
+#infographic_size3 {
+  max-width: 55%;
+}
+
 /*
 .container1 {
   margin: 0 auto;
