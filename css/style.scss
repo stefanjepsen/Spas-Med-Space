@@ -153,15 +153,6 @@ nav ul li {
   display: inline-block !important;  
 }
 
-/*
-.container1 {
-  margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
-    display: flex;
-    
-}
-*/
 #outside-solar-syst {
   position: relative;
   height: 800px;
@@ -316,9 +307,10 @@ nav ul li {
   top:125% !important;
   left:0% !important;
   opacity: 0;
-  animation: rocket-entrance 10s 1s linear ;
+  animation: rocket-entrance 12s 1s linear ;
 }
 .rocket-man2 {
+  opacity: 0;
   height: 85px;
   width: 85px;
   background-image: url("../img/space-man.png");
@@ -327,13 +319,64 @@ nav ul li {
   margin-left: 80%; 
   z-index: 9999;
   position: absolute;
+  animation: rocket-man-static linear alternate both infinite 3s 13s;
   
 }
 
 
 
+/////////////////////////////// Keyframes/////////////////////////////////////
 
-//////////////////////////////////////////
+@keyframes rocket-man-static{
+  0% {
+    opacity: !important;
+    transform:  rotate(-4deg) scaleX(1.10) scaleY(1.10) ;
+  }
+  10% {
+    opacity: 1;
+    transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+  }
+  20% {
+    opacity: 1;
+    transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+  }
+  30% {
+    opacity: 1;
+    transform:  rotate(10deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  40% {
+    opacity: 1;
+    transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  50% {
+    opacity: 1;
+    transform:  rotate(10deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  60% {
+    opacity: 1;
+    transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  70% {
+    opacity: 1;
+    transform:  rotate(10deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  80% {
+    opacity: 1;
+    transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  90% {
+    opacity: 1;
+    transform:  rotate(10deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  100% {
+    opacity: 1;
+    transform:  rotate(-2deg) scaleX(1.20) scaleY(1.20) ;
+  }
+}
+
+
+
+
 @keyframes rocket-entrance {
   0% {
     
@@ -371,6 +414,46 @@ nav ul li {
   100% {
     opacity: 0;
     transform:  translate(1150px,-1050px)  ;
+    
+  }
+}
+@keyframes rocket-entrance-large {
+  0% {
+    
+    transform:  translate(0px,0px)  ;
+  }
+  10% {
+    opacity: 1;
+    transform:  translate(250px,-250px)  ;
+  }
+  20% {
+    opacity: 1;
+    transform:  translate(550px,-500px)  ;
+  }
+  30% {
+    opacity: 1;
+    transform:  translate(500px,-90px)  ;
+  }
+  40% {
+    opacity: 1;
+    transform:  translate(160px,-90px)  ;
+  }
+  50% {
+    opacity: 1;
+    transform:  translate(1300px,-700px)  ;
+  }
+  60% {
+    opacity: 1;
+    transform:  translate(-50px,-880px)  ;
+  }
+  80% {
+    opacity: 1;
+    transform:  translate(1350px,-790px)  ;
+    
+  }
+  100% {
+    opacity: 0;
+    transform:  translate(1500px,-750px)  ;
     
   }
 }
@@ -833,7 +916,7 @@ nav ul li {
     margin-left: -8px;
     top:100% !important;
     left:10% !important;
-    animation: rocket-entrance-tablet 9s linear ;
+    animation: rocket-entrance-tablet 12s 1s linear ;
     opacity: 0;
   }
 }
@@ -885,6 +968,17 @@ nav ul li {
   .infobox {
     font-size: 14px !important;
   }
+  .rocket-man {
+    height: 80px;
+    width: 80px;
+    background-image: url("../img/space-man.png");  
+    margin-top: -8px;
+    margin-left: -8px;
+    top:100% !important;
+    left:10% !important;
+    animation: rocket-entrance-large 12s 1s linear ;
+    opacity: 0;
+  }
 }
 
 
@@ -897,29 +991,3 @@ nav ul li {
     width: auto;
   }
 }
-////////////////////////////////// Key frames
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.row > div {
-  background: #dddddd;
-  border: 1px solid #ffffff;
-  line-height: 60px;
-}
-
-.row {
-  margin: 40px auto;
-}
-*/
