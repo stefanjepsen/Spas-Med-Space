@@ -89,7 +89,7 @@ h3 {
 }
 
 #planet_img {
-  max-width: 75%;
+  max-width: 100%;
 }
 
 #planet2_img {
@@ -97,7 +97,6 @@ h3 {
 }
 
 #planet_facts {
-  background-color: rgba(255, 255, 255, 0.781);
   color: #000000;
   line-height: 40px;
 }

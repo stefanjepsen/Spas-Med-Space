@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Space med Space</title>
-    <link rel="stylesheet" href="css/style_solsystemet.css">
+    <link rel="stylesheet" href="css/style_quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
     <link
@@ -51,39 +51,32 @@
     <a href=""><img src="img/space-man.png"></a>
     </div>
 
-<h3>Solsystemet</h3>
+    <div id="quiz-box" class="col s12">
+        <div id="quiz">
+            <h3>Quiz</h3>
+            <hr style="margin-bottom: 20px;">
 
-    <div id="outside-solar-syst">
-      <div class='solar-syst'>
-        <div class='sun'></div>
-        <div class='mercury'></div>
-        <div class='venus'></div>
-        <div class='earth'></div>
-        <div class='mars'></div>
-        <div class='jupiter'></div>
-        <div class='saturn'></div>
-        <div class='uranus'></div>
-        <div class='neptune'></div>
-        <div class='pluto'></div>
-      </div>
-    </div>
+            <p id="question"></p>
 
-  
-    <div id="transparant_box" class="container col s12">
-        <div id="text_box" class="row">
-          <div class="col s12">
-            <h3>Hvad er solsystemet?</h3>
-          </div>
-          <div class="col s6">
-            <p id="text_inside_box"> Solsystemet er en del af den galakse, der kaldes for Mælkevejen. I vores solsystem har vi solen i midten, som planeterne kredser omkring. 
-          </p>
-          </div>
-          <div class="col s6">
-            <p id="text_inside_box">  Vi har i alt 8 planeter, som hedder Merkur, Venus, Jorden, Mars, Jupiter, Saturn, Uranus og Neptun. Der er også 5 dværgplaneter. Den mest kendte af dem hedder Pluto.
-          </p>
-          </div>
+            <div class="buttons center">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+
+            <hr style="margin-top: 50px">
+            <footer1>
+                <p id="progress">Spørgsmål x af y</p>
+            </footer1>
         </div>
     </div>
+
+
+
+
+
+
 
   </main>
 
@@ -111,6 +104,10 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
+<script src="js/quizcontroller.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>
