@@ -282,6 +282,7 @@ nav ul li {
   margin-left: -8px;
   top: 125% !important;
   left: 0% !important;
+  opacity: 0;
   animation: rocket-entrance 10s 1s linear;
 }
 
@@ -301,21 +302,27 @@ nav ul li {
     transform: translate(0px, 0px);
   }
   10% {
+    opacity: 1;
     transform: translate(250px, -250px);
   }
   20% {
+    opacity: 1;
     transform: translate(550px, -500px);
   }
   30% {
+    opacity: 1;
     transform: translate(500px, -220px);
   }
   40% {
+    opacity: 1;
     transform: translate(100px, -1000px);
   }
   50% {
+    opacity: 1;
     transform: translate(1300px, -700px);
   }
   60% {
+    opacity: 1;
     transform: translate(110px, -1000px);
   }
   80% {
