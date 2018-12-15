@@ -265,6 +265,14 @@ h3 {
   .infobox {
     font-size: 14px !important;
   }
+
+  #spil {
+    color: rgba(255, 255, 255, 0.315) !important;
+  }
+
+  #spil:hover {
+    color: white !important;
+  }
 }
 @media only screen and (min-width: 1700px) {
   .page-footer {

@@ -67,12 +67,8 @@ a.dropdown-trigger.btn {
   text-transform: none !important;
   box-shadow: none !important;
   margin: 0 !important;
-  color: rgba(255, 255, 255, 0.315) !important
 }
 
-a.dropdown-trigger.btn:hover {
-  color: #fff !important;
-}
 
 #dropdown {
   background-color: hsla(57, 100%, 50%, 0.829);
@@ -348,6 +344,14 @@ h3 {
     .infobox {
       font-size: 14px !important;
     }
+
+    a.dropdown-trigger.btn {
+    color: rgba(255, 255, 255, 0.315) !important
+  }
+  
+  a.dropdown-trigger.btn:hover {
+    color: #fff !important;
+  }
   }
   
   

@@ -64,14 +64,6 @@ nav ul a {
   color: #fff !important;
 }
 
-#spil {
-  color: rgba(255, 255, 255, 0.315) !important;
-}
-
-#spil:hover {
-  color: white !important;
-}
-
 nav ul li {
   margin-top: 30px;
   color: #fff200 !important;
@@ -787,6 +779,14 @@ h3 {
     height: 7em;
     width: auto;
     margin-bottom: 10%;
+  }
+
+  #spil {
+    color: rgba(255, 255, 255, 0.315) !important;
+  }
+
+  #spil:hover {
+    color: white !important;
   }
 }
 @media only screen and (min-width: 1700px) {

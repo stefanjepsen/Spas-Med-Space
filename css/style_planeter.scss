@@ -95,6 +95,8 @@ nav ul a {
   color: color(basic) !important;
 
 }
+
+
 nav ul li {
   margin-top: 30px;
   color: color(secondary) !important;
@@ -305,6 +307,13 @@ h3 {
   }
   .infobox {
     font-size: 14px !important;
+  }
+  #spil {
+    color: rgba(255, 255, 255, 0.315) !important;
+  }
+  
+  #spil:hover {
+    color: white !important;
   }
 }
 
