@@ -29,6 +29,9 @@ $fonts: (
   @return map-get($fonts, $font-name);
 }
 
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -42,6 +45,8 @@ body {
   min-height: 100vh !important;
   flex-direction: column;
   color: white;
+  cursor:url(../img/cursor.cur), auto;
+  
 }
 
 main {
@@ -91,6 +96,7 @@ nav ul a {
   font-size: 3em !important;
   font-family: font-family(header1) !important;
   color: color(basic) !important;
+  
 }
 
 #spil {
@@ -99,6 +105,7 @@ color: rgba(255, 255, 255, 0.315) !important;
 
 #spil:hover {
 color: white !important;
+
 }
 
 nav ul li {
