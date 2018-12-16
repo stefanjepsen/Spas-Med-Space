@@ -38,12 +38,16 @@ function showScores() {
     if (quiz.score >= 7) {
         var gameOverHTML = "<h4 id='result' class='center'>Tillykke, du er en superastronaut!</h4>";
         gameOverHTML += "<h4 id='score'> Du fik " + quiz.score + " ud af 8 rigtige" + "</h4>";
+        gameOverHTML += "<a href='quiz.html'><button id='reset'><p>Prøv igen</p></button></a>";
       } else if (quiz.score >= 4) {
         var gameOverHTML = "<h4 id='result' class='center'>Flot! Med lidt mere træning kunne du blive en superastronaut!</h4>";
         gameOverHTML += "<h4 id='score'> Du fik " + quiz.score + " ud af 8 rigtige" + "</h4>";
+        gameOverHTML += "<a href='quiz.html'><button id='reset'><p>Prøv igen</p></button></a>";
       } else {
         var gameOverHTML = "<h4 id='result' class='center'>Øv. Du skal bare øve dig, så er den der!</h4>";
-        gameOverHTML += "<h4 id='score'> Du fik " + quiz.score + " ud af 8 rigtige" + "</h4>"; }
+        gameOverHTML += "<h4 id='score'> Du fik " + quiz.score + " ud af 8 rigtige" + "</h4>";
+        gameOverHTML += "<a href='quiz.html'><button id='reset'><p>Prøv igen</p></button></a>";
+    }
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
 };

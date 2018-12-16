@@ -237,10 +237,6 @@ h3 {
 }
 
 @media only screen and (max-width: 490px) {
- 
-    header {
-        height: 80px !important;
-      }
     nav ul li a {
     font-size: 1.5em !important;
   }
@@ -254,12 +250,19 @@ h3 {
 }
 
 @media only screen and (max-width: 600px) {
-  nav ul a {
-    font-size: 2.3em !important;
+  nav ul li a {
+    font-size: 1em !important;
+    padding: 0 10px !important;
   }
-
-  header {
-    height: 120px;
+  #divider {
+    padding: 0 !important;
+  }
+  nav ul li {
+    margin-top: 15px;
+  }
+    #logo {
+    height: 40px !important;
+    width: 40px !important;
   }
 
   h3 {
@@ -267,6 +270,12 @@ h3 {
   }
 }
 
+@media only screen and (min-width:601px) {
+  #logo {
+    height: 80px !important;
+    width: 80px !important;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .page-footer{ 
@@ -276,7 +285,19 @@ h3 {
     height: 2.5em;
     width: auto;
   }
+  .black-text1 {
+    font-size: 1.5em !important;
+  }
 
+}
+
+@media only screen and (max-width:899px) {
+  nav ul a {
+    font-size: 2.3em !important;
+  }
+  #divider {
+    padding: 0 5px;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -325,6 +346,5 @@ h3 {
   #footer-content img{
     height: 6em;
     width: auto;
-    margin-bottom: 25%;
   }
 }

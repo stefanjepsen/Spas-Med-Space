@@ -113,26 +113,30 @@ nav ul li {
     animation: slide 2s linear infinite alternate both;
   }
 
+
+
   #quiz-box {
-    max-width: 60%;
     height: auto;
-    margin: 10px auto 50px auto;
-    background-color: color(secondary);
-    padding: 50px 50px 50px 50px;
-    border-radius: 50px;
-    border: 2px solid color(secondary);
+    background-color: #fff200d3;
+    text-align: center;
+    border: 10px solid color(secondary);
+  
+}
+
+#quiz {
+  padding:0;
 }
 
 #quiz-box h3 {
-    background-image: url("../img/background.png");
-    background-size: 40%;
+    background-color: color(secondary);
     font-size: 50px !important;
-    padding: 5px 0px !important;
-    border-radius: 50px;
+    padding: 20px 0px !important;
+    color: black !important;
+    margin: 0 !important;
+
 }
 
 #result {
-  margin-top: -20px;
   color: #000;
 }
 
@@ -142,9 +146,26 @@ nav ul li {
     font-size: 20px;
 }
 
+#reset {
+  background-color: #778897;
+  font-size: 20px;
+  color: #fff;
+  border: 1px solid #1D3C6A;
+  border-radius: 30px;
+padding: 0 20px;
+margin: 10px 0;
+font-family: font-family(text1)
+}
+
+#reset:hover {
+  cursor: pointer;
+  background-color: #57636e;
+}
+
 #question {
     font-size: 25px;
     color: #000;
+
 }
 
 #btn0, #btn1, #btn2, #btn3 {
@@ -173,14 +194,9 @@ nav ul li {
 #progress {
     color: #000;
     font-size: 15px;
+    padding-left: 30px; 
+    text-align: left !important;
 }
-
-
-
-
-
-
-
 
 
 
@@ -242,6 +258,7 @@ h3 {
       font-size: 14px;
     }
   }
+
   
   @media only screen and (max-width: 399px) {
     .page-footer{ 
@@ -266,18 +283,14 @@ h3 {
         height: 1.5em;
         width: auto;
       }
-    #logo {
-      height: 80px !important;
-      width: 80px !important;
-    }
+      #logo {
+        height: 80px !important;
+        width: 80px !important;
+      }
   }
   
   @media only screen and (max-width: 490px) {
-   
-      header {
-          height: 80px !important;
-        }
-      nav ul li a {
+    nav ul li a {
       font-size: 1.5em !important;
     }
     nav ul li {
@@ -290,16 +303,101 @@ h3 {
   }
   
   @media only screen and (max-width: 600px) {
-    nav ul a {
-      font-size: 2.3em !important;
-    }
   
-    header {
-      height: 120px;
-    }
-  
-    h3 {
-      font-size: 1.3em !important;
+  nav ul li a {
+  font-size: 1em !important;
+  padding: 0 10px !important;
+}
+#divider {
+  padding: 0 !important;
+}
+nav ul li {
+  margin-top: 15px;
+}
+  #logo {
+  height: 40px !important;
+  width: 40px !important;
+}
+#quiz-box {
+  margin: 10px auto;
+}
+
+#quiz-box h3 {
+  font-size: 23px !important;
+  padding: 10px 0px !important;
+}
+
+#result {
+font-size: 15px !important;
+}
+
+#score {
+  font-size: 10px;
+}
+
+#reset {
+p {
+font-size: 8px !important;
+margin: 10px 0;
+}
+border-radius: 25px;
+margin: 5px 0;
+}
+
+#reset:hover {
+cursor: pointer;
+background-color: #57636e;
+}
+
+#question {
+  font-size: 15px;
+  color: #000;
+
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+  background-color: #778897;
+  width: 180px;
+  color: #fff;
+  border: 1px solid #1D3C6A;
+  border-radius: 50px;
+  margin: 10px 10px 0 10px;
+  padding: 5px 0 10px 0;
+  span {
+    font-size: 13px;
+  }
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+  cursor: pointer;
+  background-color: #57636e;
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+  outline: 0;
+}
+
+#progress {
+  color: #000;
+  font-size: 10px;
+  padding-left: 20px; 
+  text-align: left !important;
+  margin: 0;
+}
+.black-text1 {
+  margin-top: 5em !important;
+}
+#footer-content img{
+  height: 1.5em;
+  width: auto;
+  margin-top: 3.5em !important;
+}
+  }
+
+  @media only screen and (min-width:601px) {
+    #logo {
+      height: 80px !important;
+      width: 80px !important;
     }
   }
   
@@ -312,7 +410,19 @@ h3 {
       height: 2.5em;
       width: auto;
     }
+    .black-text1 {
+      font-size: 1.5em !important;
+    }
   
+  }
+
+  @media only screen and (max-width:899px) {
+    nav ul a {
+      font-size: 2.3em !important;
+    }
+    #divider {
+      padding: 0 5px;
+    }
   }
   
   @media only screen and (min-width: 900px) {
@@ -362,6 +472,5 @@ h3 {
     #footer-content img{
       height: 6em;
       width: auto;
-      margin-bottom: 25%;
     }
   }
