@@ -848,8 +848,19 @@ top: 14%;
 }
 
 @media only screen and (max-width: 600px) {
-  nav ul a {
-    font-size: 2.3em !important;
+  nav ul li a {
+    font-size: 1em !important;
+    padding: 0 10px !important;
+  }
+  #divider {
+    padding: 0 !important;
+  }
+  nav ul li {
+    margin-top: 15px;
+  }
+    #logo {
+    height: 40px !important;
+    width: 40px !important;
   }
     .black-text1 {
       margin-top: 5em !important;
@@ -860,6 +871,13 @@ top: 14%;
       margin-top: 3.5em !important;
     }
     
+}
+
+@media only screen and (min-width:601px) {
+  #logo {
+    height: 80px !important;
+    width: 80px !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   .neptune {
@@ -981,6 +999,14 @@ top: 14%;
   }
 }
 
+@media only screen and (max-width:899px) {
+  nav ul a {
+    font-size: 2.3em !important;
+  }
+  #divider {
+    padding: 0 5px;
+  }
+}
 @media only screen and (min-width: 900px) {
   .page-footer{ 
     height: 250px !important;  

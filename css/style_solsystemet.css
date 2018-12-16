@@ -408,13 +408,18 @@ h3 {
   width: auto;
 }
 
+@media only screen and (min-width: 0px) {
+  * {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 399px) {
   .page-footer {
     height: 100px !important;
   }
 
   #footer-content img {
-    height: 2em;
+    height: 1em;
     width: auto;
     margin-bottom: -10%;
   }
@@ -425,7 +430,7 @@ h3 {
   }
 
   #footer-content img {
-    height: 3em;
+    height: 1.5em;
     width: auto;
   }
 
@@ -435,10 +440,6 @@ h3 {
   }
 }
 @media only screen and (max-width: 490px) {
-  header {
-    height: 80px !important;
-  }
-
   nav ul li a {
     font-size: 1.5em !important;
   }
@@ -457,12 +458,22 @@ h3 {
   }
 }
 @media only screen and (max-width: 600px) {
-  nav ul a {
-    font-size: 2.3em !important;
+  nav ul li a {
+    font-size: 1em !important;
+    padding: 0 10px !important;
   }
 
-  header {
-    height: 120px;
+  #divider {
+    padding: 0 !important;
+  }
+
+  nav ul li {
+    margin-top: 15px;
+  }
+
+  #logo {
+    height: 40px !important;
+    width: 40px !important;
   }
 
   h3 {
@@ -606,6 +617,12 @@ h3 {
     margin-left: -6px;
   }
 }
+@media only screen and (min-width: 601px) {
+  #logo {
+    height: 80px !important;
+    width: 80px !important;
+  }
+}
 @media only screen and (min-width: 680px) {
   .sun {
     height: 140px;
@@ -746,8 +763,21 @@ h3 {
   }
 
   #footer-content img {
-    height: 4.5em;
+    height: 2.5em;
     width: auto;
+  }
+
+  .black-text1 {
+    font-size: 1.5em !important;
+  }
+}
+@media only screen and (max-width: 899px) {
+  nav ul a {
+    font-size: 2.3em !important;
+  }
+
+  #divider {
+    padding: 0 5px;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -760,9 +790,8 @@ h3 {
   }
 
   #footer-content img {
-    height: 5em;
+    height: 4em;
     width: auto;
-    margin-bottom: 10%;
   }
 
   #logo {
@@ -776,9 +805,13 @@ h3 {
   }
 
   #footer-content img {
-    height: 7em;
+    height: 5em;
     width: auto;
     margin-bottom: 10%;
+  }
+
+  .infobox {
+    font-size: 14px !important;
   }
 
   #spil {
@@ -795,7 +828,7 @@ h3 {
   }
 
   #footer-content img {
-    height: 7em;
+    height: 6em;
     width: auto;
   }
 }
