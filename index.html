@@ -45,21 +45,25 @@
   </header>
 
   <main>
-    <div class="rocket-man2"></div>
+    <div  onmouseover="PlaySound('mySound')" 
+    onmouseout="StopSound('mySound')" class="rocket-man2">  <audio id='mySound' src='sound/bitconnect.mp3'>
+
+    </div>
     <!-- Modal Trigger -->
     <a class="waves-effect waves-light btn modal-trigger" href="#modal_box">KLIK HER!</a>
 
+   
     <!-- Modal Structure -->
     <div id="modal_box" class="modal">
       <div class="modal-content">
-        <h4>Tag på opdagelse i solsystemet!</h4>
-        <p>Tryk på de forskellige planeter for at rejse med rumskibet derhen. Her kan du lære en masse og blive ekspert på planeten. Når du har opdaget alle planeter kan du tage den store rumquiz, hvis du altså tør. </p>
+        <h4>Tryk på planeterne for at komme afsted!</h4>
+        <p>Hej, lad os tage på opdagelse i rummet. Her kan vi sammen lære en masse og blive eksperter på alle de flotte planeter. Når vi har opdaget alle planeter kan vi tage den store rumquiz, hvis vi altså tør. </p>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="modal-close btn" style="background-color:hsl(57, 100%, 50%); color: black;">Lad mig komme afsted!</a>
+        <a href="#!" class="modal-close btn" style="width:100%; background-color:hsl(57, 100%, 50%); color: black;">Lad mig komme afsted!</a>
       </div>
     </div>
-
+    
     <div id="outside-solar-syst">
       <div class='solar-syst'>
         <div onclick="location.href='Neptun.html';" style="cursor: pointer;" class='neptune'></div>
@@ -101,15 +105,11 @@
 
     </div>
   </footer>
-
+  <script src="js/sound.js"></script>
   <script src="js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.modal').modal();
-    });
-  </script>
+  <script src="js/Modal.js"></script>
 </body>
 
 </html>

@@ -309,7 +309,7 @@ nav ul li {
   -moz-border-radius: 30px;
   left: 65%;
   opacity: 0;
-  content: "KLIK HER";
+  top: 14%;
   z-index: 1;
   animation: rocket-man-static linear alternate both infinite 3s 13s;
 }
@@ -884,6 +884,7 @@ nav ul li {
     height: 50px !important;
     line-height: 50px !important;
     left: 57% !important;
+    top: 15%;
     z-index: 2;
   }
 }

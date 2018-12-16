@@ -47,8 +47,8 @@
     </header>
     <main>
             
-                <div id="spaceman">
-    <a href=""><img src="img/space-man.png"></a>
+    <div onmouseover="PlaySound('mySound')" 
+    onmouseout="StopSound('mySound')"  id="spaceman"> <img src="img/space-man.png"> <audio id='mySound' src='sound/Bandidos Ballerup Techno Remix Psy 2012.mp3'></a>
     </div>
 
     <div class="container">
@@ -104,6 +104,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/sound.js"></script>
 </body>
 </html>
 
