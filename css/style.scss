@@ -132,6 +132,7 @@ h3 {
 }
 
 
+
 #text-box {
   width: 100% !important;
   max-width: 100% !important;
@@ -163,6 +164,10 @@ nav ul li {
 #outside-solar-syst {
   position: relative;
   height: 800px;
+}
+
+.modal-content{
+  color: color(blackbasic) !important;
 }
 
 .solar-syst div {
@@ -323,13 +328,30 @@ nav ul li {
   background-image: url("../img/space-man.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  margin-left: 80%; 
+  margin-left: 79%; 
   z-index: 9999;
+  top: 14%;
   position: absolute;
   animation: rocket-man-static linear alternate both infinite 3s 13s;
-  
 }
 
+.waves-effect.waves-light.btn.modal-trigger {
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  background-color: color(secondary);
+  border: 2px solid color(blackbasic);
+  color: color(blackbasic);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  left: 65%;
+  opacity: 0;
+  content: 'KLIK HER';
+  z-index: 1;
+  animation: rocket-man-static linear alternate both infinite 3s 13s;
+}
 
 
 /////////////////////////////// Keyframes/////////////////////////////////////
@@ -926,6 +948,20 @@ nav ul li {
     animation: rocket-entrance-tablet 12s 1s linear ;
     opacity: 0;
   }
+  .rocket-man2 {
+    opacity: 0;
+    height: 55px;
+    width: 55px;
+    top: 14.5%;
+    z-index: 1;
+  }
+  .waves-effect.waves-light.btn.modal-trigger {
+    width: 120px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    left: 57% !important;
+    z-index: 2;
+  }
 }
 
 
@@ -942,7 +978,6 @@ nav ul li {
   .black-text1 {
     font-size: 1.5em !important;
   }
-
 }
 
 @media only screen and (min-width: 900px) {
@@ -986,8 +1021,26 @@ nav ul li {
     animation: rocket-entrance-large 12s 1s linear ;
     opacity: 0;
   }
+ 
 }
 
+
+@media only screen and (max-width: 1440px) {
+  .waves-effect.waves-light.btn.modal-trigger {
+    width: 170px ;
+    height: 50px ;
+    line-height: 50px ;
+    left: 62% ;
+    z-index: 2;
+  }
+  .rocket-man2 {
+    opacity: 0;
+    height: 60px;
+    width: 60px;
+    top: 14.5%;
+    z-index: 1;
+  }
+  }
 
 @media only screen and (min-width: 1700px) {
   .page-footer{ 
