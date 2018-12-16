@@ -29,6 +29,9 @@ $fonts: (
   @return map-get($fonts, $font-name);
 }
 
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -42,6 +45,8 @@ body {
   min-height: 100vh !important;
   flex-direction: column;
   color: white;
+  cursor:url(../img/cursor.cur), auto;
+  
 }
 
 main {
@@ -91,6 +96,7 @@ nav ul a {
   font-size: 3em !important;
   font-family: font-family(header1) !important;
   color: color(basic) !important;
+  
 }
 
 #spil {
@@ -99,6 +105,7 @@ color: rgba(255, 255, 255, 0.315) !important;
 
 #spil:hover {
 color: white !important;
+
 }
 
 nav ul li {
@@ -123,6 +130,7 @@ h3 {
   text-transform: uppercase;
   font-size: 2em !important; 
 }
+
 
 
 #text-box {
@@ -153,18 +161,13 @@ nav ul li {
   display: inline-block !important;  
 }
 
-/*
-.container1 {
-  margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
-    display: flex;
-    
-}
-*/
 #outside-solar-syst {
   position: relative;
   height: 800px;
+}
+
+.modal-content{
+  color: color(blackbasic) !important;
 }
 
 .solar-syst div {
@@ -316,24 +319,93 @@ nav ul li {
   top:125% !important;
   left:0% !important;
   opacity: 0;
-  animation: rocket-entrance 10s 1s linear ;
+  animation: rocket-entrance 12s 1s linear ;
 }
 .rocket-man2 {
+  opacity: 0;
   height: 85px;
   width: 85px;
   background-image: url("../img/space-man.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  margin-left: 80%; 
+  margin-left: 79%; 
   z-index: 9999;
+  top: 14%;
   position: absolute;
-  
+  animation: rocket-man-static linear alternate both infinite 3s 13s;
+}
+
+.waves-effect.waves-light.btn.modal-trigger {
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  background-color: color(secondary);
+  border: 2px solid color(blackbasic);
+  color: color(blackbasic);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  left: 65%;
+  opacity: 0;
+  content: 'KLIK HER';
+  z-index: 1;
+  animation: rocket-man-static linear alternate both infinite 3s 13s;
+}
+
+
+/////////////////////////////// Keyframes/////////////////////////////////////
+
+@keyframes rocket-man-static{
+  0% {
+    opacity: !important;
+    transform:  rotate(-4deg) scaleX(1.10) scaleY(1.10) ;
+  }
+  10% {
+    opacity: 1;
+    transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+  }
+  20% {
+    opacity: 1;
+    transform:  rotate(-3deg) scaleX(0.80) scaleY(0.80) ;
+  }
+  30% {
+    opacity: 1;
+    transform:  rotate(10deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  40% {
+    opacity: 1;
+    transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  50% {
+    opacity: 1;
+    transform:  rotate(10deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  60% {
+    opacity: 1;
+    transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  70% {
+    opacity: 1;
+    transform:  rotate(10deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  80% {
+    opacity: 1;
+    transform:  rotate(-3deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  90% {
+    opacity: 1;
+    transform:  rotate(10deg) scaleX(1.20) scaleY(1.20) ;
+  }
+  100% {
+    opacity: 1;
+    transform:  rotate(-2deg) scaleX(1.20) scaleY(1.20) ;
+  }
 }
 
 
 
 
-//////////////////////////////////////////
 @keyframes rocket-entrance {
   0% {
     
@@ -371,6 +443,46 @@ nav ul li {
   100% {
     opacity: 0;
     transform:  translate(1150px,-1050px)  ;
+    
+  }
+}
+@keyframes rocket-entrance-large {
+  0% {
+    
+    transform:  translate(0px,0px)  ;
+  }
+  10% {
+    opacity: 1;
+    transform:  translate(250px,-250px)  ;
+  }
+  20% {
+    opacity: 1;
+    transform:  translate(550px,-500px)  ;
+  }
+  30% {
+    opacity: 1;
+    transform:  translate(500px,-90px)  ;
+  }
+  40% {
+    opacity: 1;
+    transform:  translate(160px,-90px)  ;
+  }
+  50% {
+    opacity: 1;
+    transform:  translate(1300px,-700px)  ;
+  }
+  60% {
+    opacity: 1;
+    transform:  translate(-50px,-880px)  ;
+  }
+  80% {
+    opacity: 1;
+    transform:  translate(1350px,-790px)  ;
+    
+  }
+  100% {
+    opacity: 0;
+    transform:  translate(1500px,-750px)  ;
     
   }
 }
@@ -851,8 +963,22 @@ nav ul li {
     margin-left: -8px;
     top:100% !important;
     left:10% !important;
-    animation: rocket-entrance-tablet 9s linear ;
+    animation: rocket-entrance-tablet 12s 1s linear ;
     opacity: 0;
+  }
+  .rocket-man2 {
+    opacity: 0;
+    height: 55px;
+    width: 55px;
+    top: 14.5%;
+    z-index: 1;
+  }
+  .waves-effect.waves-light.btn.modal-trigger {
+    width: 120px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    left: 57% !important;
+    z-index: 2;
   }
 }
 
@@ -870,7 +996,6 @@ nav ul li {
   .black-text1 {
     font-size: 1.5em !important;
   }
-
 }
 
 @media only screen and (max-width:899px) {
@@ -911,8 +1036,37 @@ nav ul li {
   .infobox {
     font-size: 14px !important;
   }
+  .rocket-man {
+    height: 80px;
+    width: 80px;
+    background-image: url("../img/space-man.png");  
+    margin-top: -8px;
+    margin-left: -8px;
+    top:100% !important;
+    left:10% !important;
+    animation: rocket-entrance-large 12s 1s linear ;
+    opacity: 0;
+  }
+ 
 }
 
+
+@media only screen and (max-width: 1440px) {
+  .waves-effect.waves-light.btn.modal-trigger {
+    width: 170px ;
+    height: 50px ;
+    line-height: 50px ;
+    left: 62% ;
+    z-index: 2;
+  }
+  .rocket-man2 {
+    opacity: 0;
+    height: 60px;
+    width: 60px;
+    top: 14.5%;
+    z-index: 1;
+  }
+  }
 
 @media only screen and (min-width: 1700px) {
   .page-footer{ 
@@ -923,29 +1077,3 @@ nav ul li {
     width: auto;
   }
 }
-////////////////////////////////// Key frames
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.row > div {
-  background: #dddddd;
-  border: 1px solid #ffffff;
-  line-height: 60px;
-}
-
-.row {
-  margin: 40px auto;
-}
-*/

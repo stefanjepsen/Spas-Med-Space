@@ -13,6 +13,7 @@ body {
   min-height: 100vh !important;
   flex-direction: column;
   color: white;
+  cursor: url(../img/cursor.cur), auto;
 }
 
 main {
@@ -121,18 +122,13 @@ nav ul li {
   display: inline-block !important;
 }
 
-/*
-.container1 {
-  margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
-    display: flex;
-    
-}
-*/
 #outside-solar-syst {
   position: relative;
   height: 800px;
+}
+
+.modal-content {
+  color: black !important;
 }
 
 .solar-syst div {
@@ -283,20 +279,87 @@ nav ul li {
   top: 125% !important;
   left: 0% !important;
   opacity: 0;
-  animation: rocket-entrance 10s 1s linear;
+  animation: rocket-entrance 12s 1s linear;
 }
 
 .rocket-man2 {
+  opacity: 0;
   height: 85px;
   width: 85px;
   background-image: url("../img/space-man.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  margin-left: 80%;
+  margin-left: 79%;
   z-index: 9999;
+  top: 14%;
   position: absolute;
+  animation: rocket-man-static linear alternate both infinite 3s 13s;
 }
 
+.waves-effect.waves-light.btn.modal-trigger {
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  background-color: #fff200;
+  border: 2px solid black;
+  color: black;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  left: 65%;
+  opacity: 0;
+  content: "KLIK HER";
+  z-index: 1;
+  animation: rocket-man-static linear alternate both infinite 3s 13s;
+}
+
+@keyframes rocket-man-static {
+  0% {
+    opacity: !important;
+    transform: rotate(-4deg) scaleX(1.1) scaleY(1.1);
+  }
+  10% {
+    opacity: 1;
+    transform: rotate(-3deg) scaleX(0.8) scaleY(0.8);
+  }
+  20% {
+    opacity: 1;
+    transform: rotate(-3deg) scaleX(0.8) scaleY(0.8);
+  }
+  30% {
+    opacity: 1;
+    transform: rotate(10deg) scaleX(1.2) scaleY(1.2);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(-3deg) scaleX(1.2) scaleY(1.2);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(10deg) scaleX(1.2) scaleY(1.2);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(-3deg) scaleX(1.2) scaleY(1.2);
+  }
+  70% {
+    opacity: 1;
+    transform: rotate(10deg) scaleX(1.2) scaleY(1.2);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(-3deg) scaleX(1.2) scaleY(1.2);
+  }
+  90% {
+    opacity: 1;
+    transform: rotate(10deg) scaleX(1.2) scaleY(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-2deg) scaleX(1.2) scaleY(1.2);
+  }
+}
 @keyframes rocket-entrance {
   0% {
     transform: translate(0px, 0px);
@@ -332,6 +395,43 @@ nav ul li {
   100% {
     opacity: 0;
     transform: translate(1150px, -1050px);
+  }
+}
+@keyframes rocket-entrance-large {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(250px, -250px);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(550px, -500px);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(500px, -90px);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(160px, -90px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(1300px, -700px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(-50px, -880px);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(1350px, -790px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(1500px, -750px);
   }
 }
 @keyframes rocket-entrance-tablet {
@@ -787,8 +887,24 @@ nav ul li {
     margin-left: -8px;
     top: 100% !important;
     left: 10% !important;
-    animation: rocket-entrance-tablet 9s linear;
+    animation: rocket-entrance-tablet 12s 1s linear;
     opacity: 0;
+  }
+
+  .rocket-man2 {
+    opacity: 0;
+    height: 55px;
+    width: 55px;
+    top: 14.5%;
+    z-index: 1;
+  }
+
+  .waves-effect.waves-light.btn.modal-trigger {
+    width: 120px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    left: 57% !important;
+    z-index: 2;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -847,6 +963,35 @@ nav ul li {
   .infobox {
     font-size: 14px !important;
   }
+
+  .rocket-man {
+    height: 80px;
+    width: 80px;
+    background-image: url("../img/space-man.png");
+    margin-top: -8px;
+    margin-left: -8px;
+    top: 100% !important;
+    left: 10% !important;
+    animation: rocket-entrance-large 12s 1s linear;
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .waves-effect.waves-light.btn.modal-trigger {
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    left: 62%;
+    z-index: 2;
+  }
+
+  .rocket-man2 {
+    opacity: 0;
+    height: 60px;
+    width: 60px;
+    top: 14.5%;
+    z-index: 1;
+  }
 }
 @media only screen and (min-width: 1700px) {
   .page-footer {
@@ -858,16 +1003,5 @@ nav ul li {
     width: auto;
   }
 }
-/*
-.row > div {
-  background: #dddddd;
-  border: 1px solid #ffffff;
-  line-height: 60px;
-}
-
-.row {
-  margin: 40px auto;
-}
-*/
 
 /*# sourceMappingURL=style.css.map */
