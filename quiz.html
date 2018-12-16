@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,20 @@
     <title>Space med Space</title>
     <link rel="stylesheet" href="css/style_quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Let browser know website is optimized for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-  <header>
-      <div class="navbar center-align" style="height:100%;">
-          <nav class="transparent z-depth-0">
-           <div class="nav-wrapper">
-            <ul id="nav-mobile">
-                <li><a class='dropdown-trigger btn' href="solsystemet.html" data-target='dropdown'>Solsystemet</a></li>   
-                <ul id='dropdown' class='dropdown-content'>
+    <header>
+        <div class="navbar center-align" style="height:100%;">
+            <nav class="transparent z-depth-0">
+                <div class="nav-wrapper">
+                    <ul id="nav-mobile">
+                        <li><a class='dropdown-trigger btn' href="solsystemet.html" data-target='dropdown'>Solsystemet</a></li>
+                        <ul id='dropdown' class='dropdown-content'>
                             <li><a href="solen.html">Solen</a></li>
                             <li><a href="merkur.html">Merkur</a></li>
                             <li><a href="venus.html">Venus</a></li>
@@ -33,47 +32,48 @@
                             <li><a href="uranus.html">Uranus</a></li>
                             <li><a href="neptun.html">Neptun</a></li>
                             <li><a href="pluto.html">Pluto</a></li>
-                      </ul>
-                <li><a id="divider">|</a></li>
-                <li><a id="spil" href="quiz.html">Spil & Film</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+                        </ul>
+                        <li><a id="divider">|</a></li>
+                        <li><a id="spil" href="quiz.html">Spil & Film</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-      <a href="index.html"><img id="logo" src="img/Logo.png" style="height:110px; width:110px; " alt=""
-      /></a>
-  </header>
+        <a href="index.html"><img id="logo" src="img/Logo.png" style="height:110px; width:110px; " alt="" /></a>
+    </header>
 
-  <main>
+    <main>
 
-      <div id="spaceman">
-    <a href=""><img src="img/space-man.png"></a>
-    </div>
-<div class="container">
-    <div id="quiz-box" class="row">
-        <div id="quiz" class="col s12" style="margin-bottom:20px;">
-            <h3>Quiz</h3>
+        <div onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')" id="spaceman"> <a href="index.html"
+                style="cursor: pointer;"> <img src="img/space-man.png"> </a>
+            <audio id='mySound' src='sound/bitconnect.mp3'>
+        </div>
+
+        <div class="container">
+            <div id="quiz-box" class="row">
+                <div id="quiz" class="col s12" style="margin-bottom:20px;">
+                    <h3>Quiz</h3>
 
 
-            <p id="question" class="col s12 center"></p>
+                    <p id="question" class="col s12 center"></p>
 
-            <div class="col s12 buttons center" style="margin-top:20px;margin-bottom:30px;">
-                <button id="btn0"><span id="choice0"></span></button>
-                <button id="btn1"><span id="choice1"></span></button>
-                <button id="btn2"><span id="choice2"></span></button>
-                <button id="btn3"><span id="choice3"></span></button>
+                    <div class="col s12 buttons center" style="margin-top:20px;margin-bottom:30px;">
+                        <button id="btn0"><span id="choice0"></span></button>
+                        <button id="btn1"><span id="choice1"></span></button>
+                        <button id="btn2"><span id="choice2"></span></button>
+                        <button id="btn3"><span id="choice3"></span></button>
+                    </div>
+
+
+
+                    <footer1 class="col s12">
+                        <p id="progress">Spørgsmål x af y</p>
+                    </footer1>
+                </div>
             </div>
-            
 
-
-            <footer1 class="col s12">
-                <p id="progress">Spørgsmål x af y</p>
-            </footer1>
         </div>
-    </div>
-
-    </div>
 
 
 
@@ -81,36 +81,37 @@
 
 
 
-  </main>
+    </main>
 
 
-  <footer class="page-footer" >
-      <div class="container valign-wrapper">
-        <div id="footer-content" class="row valign-wrapper">
-          <div class="infobox left-align">
-            <p class="black-text1" style="white-space: nowrap;">
-                Omkring os
-              </p>
-              
-            <p class="black-text1" style="white-space: nowrap;">Kontakt os</p>
-          </div>
-          
-          <div class="col l6 s12 right-align ">
-             <a href="https://illvid.dk/" target="_blank"> <img src="img/illustreret-videnskab.png"> </a>
-          </div>
+    <footer class="page-footer">
+        <div class="container valign-wrapper">
+            <div id="footer-content" class="row valign-wrapper">
+                <div class="infobox left-align">
+                    <p class="black-text1" style="white-space: nowrap;">
+                        Omkring os
+                    </p>
+
+                    <p class="black-text1" style="white-space: nowrap;">Kontakt os</p>
+                </div>
+
+                <div class="col l6 s12 right-align ">
+                    <a href="https://illvid.dk/" target="_blank"> <img src="img/illustreret-videnskab.png"> </a>
+                </div>
+            </div>
         </div>
-      </div>
-      
-      </div>
+
+        </div>
     </footer>
-     
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="js/script.js"></script>
-<script src="js/quizcontroller.js"></script>
-<script src="js/questions.js"></script>
-<script src="js/app.js"></script>
-
+    <script src="js/script.js"></script>
+    <script src="js/quizcontroller.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/sound.js"></script>
 </body>
+
 </html>
