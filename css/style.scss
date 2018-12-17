@@ -802,7 +802,14 @@ top: 14%;
   * {
     font-size: 14px;
   }
-  
+  .waves-effect.waves-light.btn.modal-trigger {
+    width: 120px ;
+    height: 50px ;
+    line-height: 50px;
+    left: 36%;
+    top: 15%;
+    z-index: 2;
+  }
 }
 
 @media only screen and (max-width: 399px) {
@@ -818,6 +825,7 @@ top: 14%;
         margin-bottom: -10%
       }
     }
+ 
 }
 
 @media only screen and (min-width: 400px) {
@@ -853,14 +861,6 @@ top: 14%;
     margin-left: -50px !important;
    
   }
-  .waves-effect.waves-light.btn.modal-trigger {
-    width: 120px !important;
-    height: 50px !important;
-    line-height: 50px !important;
-    left: 32% !important;
-    top: 15%;
-    z-index: 2;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -894,6 +894,7 @@ top: 14%;
     height: 80px !important;
     width: 80px !important;
   }
+ 
 }
 @media only screen and (max-width: 768px) {
   .neptune {
@@ -989,14 +990,7 @@ top: 14%;
     top: 14.5%;
     z-index: 1;
   }
-  .waves-effect.waves-light.btn.modal-trigger {
-    width: 120px ;
-    height: 50px ;
-    line-height: 50px;
-    left: 57%;
-    top: 15%;
-    z-index: 2;
-  }
+ 
 }
 
 
@@ -1012,6 +1006,14 @@ top: 14%;
   }
   .black-text1 {
     font-size: 1.5em !important;
+  }
+  .waves-effect.waves-light.btn.modal-trigger {
+    width: 120px ;
+    height: 50px ;
+    line-height: 50px;
+    left: 55%;
+    top: 15%;
+    z-index: 2;
   }
 }
 
@@ -1067,15 +1069,19 @@ top: 14%;
  
 }
 
-
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) {
   .waves-effect.waves-light.btn.modal-trigger {
-    width: 170px ;
+    width: 120px ;
     height: 50px ;
-    line-height: 50px ;
-    left: 62% ;
+    line-height: 50px;
+    left: 66%;
+    top: 15%;
     z-index: 2;
   }
+}
+
+@media only screen and (max-width: 1440px) {
+
   .rocket-man2 {
     opacity: 0;
     height: 60px;
@@ -1085,6 +1091,16 @@ top: 14%;
   }
   }
 
+  @media only screen and (min-width: 1440px) {
+    .waves-effect.waves-light.btn.modal-trigger {
+      width: 170px ;
+      height: 50px ;
+      line-height: 50px ;
+      left: 62% ;
+      z-index: 2;
+    }
+    }
+  
 @media only screen and (min-width: 1700px) {
   .page-footer{ 
     height: 300px !important;  
