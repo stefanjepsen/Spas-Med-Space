@@ -1,12 +1,3 @@
-  $('.dropdown-trigger').dropdown();
-
-  $('.dropdown-trigger').dropdown({
-    hover: true, // Activate on hover
-    coverTrigger: false,
-  }
-);
-
-
 function myFunction(x) {
   if (x.matches) { // If media query matches
     $('.dropdown-trigger').dropdown({
