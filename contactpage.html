@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Spas med Space</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Spas med Space - Hvem er vi</title>
+  <link rel="stylesheet" href="css/contact_page.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="shortcut icon" type="image/png" href="img/logo.png" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -22,7 +22,6 @@
           <ul id="nav-mobile">
             <li><a class='dropdown-trigger btn' href="solsystemet.html" data-target='dropdown'>Solsystemet</a></li>
             <ul id='dropdown' class='dropdown-content'>
-            <li><a href="solsystemet.html">Solsystemet</a></li>
               <li><a href="solen.html">Solen</a></li>
               <li><a href="merkur.html">Merkur</a></li>
               <li><a href="venus.html">Venus</a></li>
@@ -35,7 +34,7 @@
               <li><a href="pluto.html">Pluto</a></li>
             </ul>
             <li><a href="">|</a></li>
-            <li><a href="quiz.html">Spil & Film</a></li>
+            <li><a id="spil" href="quiz.html">Spil & Film</a></li>
           </ul>
         </div>
       </nav>
@@ -44,45 +43,35 @@
     <a href="index.html"><img id="logo" src="img/Logo.png" style="height:110px; width:110px; " alt="" /></a>
 
   </header>
-
   <main>
-    <div  onmouseover="PlaySound('mySound')" 
-    onmouseout="StopSound('mySound')" class="rocket-man2">  <audio id='mySound' src='sound/Bandidos Ballerup Techno Remix Psy 2012.mp3'>
 
-    </div>
-    <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal_box">KLIK HER!</a>
-
-   
-    <!-- Modal Structure -->
-    <div id="modal_box" class="modal">
-      <div class="modal-content">
-        <h4>Tryk på planeterne for at komme afsted!</h4>
-        <p>Hej, lad os tage på opdagelse i rummet. Her kan vi sammen lære en masse og blive eksperter på alle de flotte planeter. Når vi har opdaget alle planeter kan vi tage den store rumquiz, hvis vi altså tør. </p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close btn" style="width:100%; background-color:hsl(57, 100%, 50%); color: black;">Lad mig komme afsted!</a>
-      </div>
+    <div onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')" id="spaceman"> <a href="index.html"style="cursor: pointer;"> <img src="img/space-man.png"> </a>
+      <audio id='mySound' src='sound/bitconnect.mp3'>
     </div>
     
-    <div id="outside-solar-syst">
-      <div class='solar-syst'>
-        <div onclick="location.href='Neptun.html';" style="cursor: pointer;" class='neptune'></div>
-        <div onclick="location.href='jupiter.html';" style="cursor: pointer;" class='jupiter'></div>
-        <div onclick="location.href='jorden.html';" style="cursor: pointer;" class='earth'></div>
-        <div onclick="location.href='venus.html';" style="cursor: pointer;" class='venus'></div>
-        <div onclick="location.href='solen.html';" style="cursor: pointer;" class='sun'></div>
-        <div onclick="location.href='merkur.html';" style="cursor: pointer;" class='mercury'></div>
-        <div onclick="location.href='mars.html';" style="cursor: pointer;" class='mars'></div>
-        <div onclick="location.href='saturn.html';" style="cursor: pointer;" class='saturn'></div>
-        <div onclick="location.href='uranus.html';" style="cursor: pointer;" class='uranus'></div>
-        <div onclick="location.href='pluto.html';" style="cursor: pointer;" class='pluto'></div>
-        <div class="rocket-man"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>OM OS</h3>
+        </div>
+        <div class="col s12">
+
+
+          <div class="container-img">
+            <div class="row">
+              <div class="col s12">
+                <img src="img/ste1.png" alt="">
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </div>
 
 
-    </div>
+
+
 
   </main>
 
@@ -91,14 +80,11 @@
     <div class="container valign-wrapper">
       <div id="footer-content" class="row valign-wrapper">
         <div class="infobox left-align">
-          <a href="contactpage.html">
           <p class="black-text1" style="white-space: nowrap;">
             Omkring os
           </p>
-        </a>
-        <a href="contactpage.html"></a>
+
           <p class="black-text1" style="white-space: nowrap;">Kontakt os</p>
-        </a>
         </div>
 
         <div class="col l6 s12 right-align ">
@@ -109,12 +95,12 @@
 
     </div>
   </footer>
-  <script src="js/sound.js"></script>
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/Modal.js"></script>
-  <script src="js/script.js"></script>  
-
+  <script src="js/script.js"></script>
+  <script src="js/sound.js"></script>
 </body>
 
 </html>

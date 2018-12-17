@@ -765,6 +765,22 @@ nav ul li {
     height: 50px !important;
     width: 50px !important;
   }
+
+  .pluto {
+    height: 35.5px;
+    width: 35.5px;
+    margin-top: -4px;
+    margin-left: -50px !important;
+  }
+
+  .waves-effect.waves-light.btn.modal-trigger {
+    width: 120px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    left: 32% !important;
+    top: 15%;
+    z-index: 2;
+  }
 }
 @media only screen and (max-width: 600px) {
   nav ul li a {
@@ -900,10 +916,10 @@ nav ul li {
   }
 
   .waves-effect.waves-light.btn.modal-trigger {
-    width: 120px !important;
-    height: 50px !important;
-    line-height: 50px !important;
-    left: 57% !important;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    left: 57%;
     top: 15%;
     z-index: 2;
   }
