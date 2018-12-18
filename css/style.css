@@ -12,7 +12,7 @@ body {
   display: flex !important;
   min-height: 100vh !important;
   flex-direction: column;
-  color: white;
+  color: #fff;
   cursor: url(../img/cursor.cur), auto;
 }
 
@@ -50,7 +50,7 @@ a.dropdown-trigger.btn {
 }
 
 #dropdown li:hover {
-  background-color: #fff200;
+  background-color: rgba(255, 242, 0, 0.829);
 }
 
 nav ul a {
@@ -64,16 +64,16 @@ nav ul a {
 }
 
 #spil {
-  color: rgba(255, 255, 255, 0.315) !important;
+  color: rgba(255, 255, 255, 0.514) !important;
 }
 
 #spil:hover {
-  color: white !important;
+  color: #fff !important;
 }
 
 nav ul li {
   margin-top: 30px;
-  color: #fff200 !important;
+  color: rgba(255, 242, 0, 0.829) !important;
 }
 
 #nav-mobile {
@@ -87,7 +87,7 @@ main {
 
 h3 {
   font-family: "Handlee", cursive !important;
-  color: #fff200 !important;
+  color: rgba(255, 242, 0, 0.829) !important;
   text-align: center;
   margin: 0 !important;
   text-transform: uppercase;
@@ -114,7 +114,7 @@ nav ul a {
 
 nav ul li {
   margin-top: 30px;
-  color: #fff200 !important;
+  color: rgba(255, 242, 0, 0.829) !important;
 }
 
 #nav-mobile {
@@ -129,6 +129,82 @@ nav ul li {
 
 .modal-content {
   color: black !important;
+}
+
+.rocket-man2 {
+  opacity: 0;
+  height: 85px;
+  width: 85px;
+  background-image: url("../img/space-man.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 79%;
+  z-index: 9999;
+  top: 14%;
+  position: absolute;
+  animation: rocket-man-static linear alternate both infinite 3s 13s;
+}
+
+.waves-effect.waves-light.btn.modal-trigger {
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  background-color: rgba(255, 242, 0, 0.829);
+  border: 2px solid black;
+  color: black;
+  left: 65%;
+  opacity: 0;
+  top: 14%;
+  z-index: 1;
+  animation: rocket-man-static linear alternate both infinite 3s 13s;
+  border-radius: 30px;
+  border-radius: 30px;
+}
+
+.rocket-man {
+  height: 80px;
+  width: 80px;
+  background-image: url("../img/space-man.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -8px;
+  margin-left: -8px;
+  top: 125% !important;
+  left: 0% !important;
+  opacity: 0;
+  animation: rocket-entrance 12s 1s linear;
+}
+
+.page-footer {
+  background-color: #0000 !important;
+  width: 100%;
+  height: auto;
+  background-image: url("../img/moon2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: static;
+  bottom: 0;
+  padding: 0 !important;
+}
+
+.infobox {
+  margin-top: -10px !important;
+  display: flex !important;
+}
+
+.black-text1 {
+  margin: 1rem !important;
+  color: black;
+}
+
+#footer-content {
+  margin-bottom: -30%;
+}
+#footer-content img {
+  height: 50px !important;
+  width: auto;
 }
 
 .solar-syst div {
@@ -165,8 +241,8 @@ nav ul li {
 }
 
 .earth {
-  height: 93px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
   background-image: url("../img/earth.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -187,7 +263,7 @@ nav ul li {
   margin-left: -10px;
   top: 49% !important;
   left: 14% !important;
-  animation: slide-tr 14s cubic-bezier(0.47, -4, 0.745, 0.115) infinite alternate-reverse both;
+  animation: slide 14s cubic-bezier(0.47, -4, 0.745, 0.115) infinite alternate-reverse both;
 }
 
 .sun {
@@ -266,52 +342,6 @@ nav ul li {
   top: 50% !important;
   left: 90% !important;
   animation: slide 2s linear infinite alternate both;
-}
-
-.rocket-man {
-  height: 80px;
-  width: 80px;
-  background-image: url("../img/space-man.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-top: -8px;
-  margin-left: -8px;
-  top: 125% !important;
-  left: 0% !important;
-  opacity: 0;
-  animation: rocket-entrance 12s 1s linear;
-}
-
-.rocket-man2 {
-  opacity: 0;
-  height: 85px;
-  width: 85px;
-  background-image: url("../img/space-man.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-left: 79%;
-  z-index: 9999;
-  top: 14%;
-  position: absolute;
-  animation: rocket-man-static linear alternate both infinite 3s 13s;
-}
-
-.waves-effect.waves-light.btn.modal-trigger {
-  position: absolute;
-  width: 200px;
-  height: 75px;
-  text-align: center;
-  line-height: 75px;
-  background-color: #fff200;
-  border: 2px solid black;
-  color: black;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  left: 65%;
-  opacity: 0;
-  top: 14%;
-  z-index: 1;
-  animation: rocket-man-static linear alternate both infinite 3s 13s;
 }
 
 @keyframes rocket-man-static {
@@ -514,26 +544,6 @@ nav ul li {
     transform: translate(-156px, -60px);
   }
 }
-@keyframes orbit2 {
-  0% {
-    transform: translate(-126px, 131px);
-  }
-  25% {
-    transform: translate(82px, 283px);
-  }
-  51% {
-    transform: translate(284px, 31px);
-  }
-  75% {
-    transform: translate(92px, -21px);
-  }
-  88% {
-    transform: translate(1px, -1px);
-  }
-  100% {
-    transform: translate(-126px, 131px);
-  }
-}
 @keyframes jupiter-tablet {
   0% {
     transform: translate(-100px, 121px);
@@ -612,34 +622,6 @@ nav ul li {
     transform: rotate(365deg);
   }
 }
-@-webkit-keyframes slide-tl {
-  0% {
-    -webkit-transform: translateY(0) translateX(0);
-    transform: translateY(0) translateX(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px) translateX(-100px);
-    transform: translateY(-100px) translateX(-100px);
-  }
-}
-@keyframes slide-tl {
-  0% {
-    -webkit-transform: translateY(0) translateX(0);
-    transform: translateY(0) translateX(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px) translateX(-100px);
-    transform: translateY(-100px) translateX(-100px);
-  }
-}
-@keyframes slide-tr {
-  0% {
-    transform: translateY(0) translateX(0);
-  }
-  100% {
-    transform: translateY(-100px) translateX(100px);
-  }
-}
 @keyframes saturn {
   0% {
     transform: translate(0px, 125px);
@@ -691,36 +673,6 @@ nav ul li {
     transform: translate(0px, 0px);
   }
 }
-.page-footer {
-  background-color: #0000 !important;
-  width: 100%;
-  height: auto;
-  background-image: url("../img/moon2.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: static;
-  bottom: 0;
-  padding: 0 !important;
-}
-
-.infobox {
-  margin-top: -10px !important;
-  display: flex !important;
-}
-
-.black-text1 {
-  margin: 1rem !important;
-  color: black;
-}
-
-#footer-content {
-  margin-bottom: -30%;
-}
-#footer-content img {
-  height: 50px !important;
-  width: auto;
-}
-
 @media only screen and (min-width: 0px) {
   * {
     font-size: 14px;
@@ -845,7 +797,7 @@ nav ul li {
     height: 40px;
     width: 40px;
     margin-top: -185px;
-    margin-left: 115px;
+    margin-left: 35px;
   }
 
   .sun {
@@ -1017,7 +969,7 @@ nav ul li {
     width: 170px;
     height: 50px;
     line-height: 50px;
-    left: 62%;
+    left: 68%;
     z-index: 2;
   }
 }

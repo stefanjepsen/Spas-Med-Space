@@ -2,12 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Handlee");
 
 $colors: (
-  primary: #005dff,
-  primary-light: lighten(#005dff, 40%),
-  primary-dark: darken(#005dff, 40%),
-  secondary: hsl(57, 100%, 50%),
-  basic: #fff,
-  blackbasic: black
+  trans: hsla(57, 100%, 50%, 0.829),
+  trans-dark: rgba(255, 255, 255, 0.514),
+  light: #fff,
+  dark: black
 );
 
 $fonts: (
@@ -41,11 +39,9 @@ body {
   display: flex !important;
   min-height: 100vh !important;
   flex-direction: column;
-  color: white;
+  color:color(light);
   cursor:url(../img/cursor.cur), auto;
 }
-
-
 
 main {
   flex: 1 0 auto;
@@ -61,7 +57,6 @@ header {
   left: 20px;
 }
 
-
 a.dropdown-trigger.btn {
   background-color: rgba(255, 255, 255, 0) !important;
   letter-spacing: 0 !important;
@@ -70,9 +65,8 @@ a.dropdown-trigger.btn {
   margin: 0 !important;
 }
 
-
 #dropdown {
-  background-color: hsla(57, 100%, 50%, 0.829);
+  background-color: color(trans);
   overflow-y: visible;
 }
 
@@ -82,9 +76,8 @@ a.dropdown-trigger.btn {
   font-size: 10px !important;
 }
 
-
 #dropdown li:hover {
-background-color: hsl(57, 100%, 50%);
+background-color: color(trans);
 }
 
 nav ul a {
@@ -94,34 +87,23 @@ nav ul a {
   cursor: pointer;
   font-size: 3em !important;
   font-family: font-family(header1) !important;
-  color: color(basic) !important;
+  color: color(light) !important;
 
 }
 nav ul li {
   margin-top: 30px;
-  color: color(secondary) !important;
+  color: color(trans) !important;
 }
 
 #nav-mobile {
   margin:auto !important;
   display: inline-block !important;  
 }
-
-#spaceman {
-  position: fixed;
-  bottom: 20px;
-  right: 25px;
-    animation: slide 2s linear infinite alternate both;
-  }
-
-
-
   #quiz-box {
     height: auto;
     background-color: #fff200d3;
     text-align: center;
-    border: 10px solid color(secondary);
-  
+    border: 10px solid color(trans);
 }
 
 #quiz {
@@ -129,30 +111,29 @@ nav ul li {
 }
 
 #quiz-box h3 {
-    background-color: color(secondary);
+    background-color: color(trans);
     font-size: 50px !important;
     padding: 20px 0px !important;
-    color: black !important;
+    color: color(dark) !important;
     margin: 0 !important;
-
 }
 
 #result {
-  color: #000;
+  color: color(dark);
 }
 
 #score {
-    color: #000;
-    text-align: center;
-    font-size: 20px;
+color: color(dark);
+text-align: center;
+font-size: 20px;
 }
 
 #reset {
-  background-color: #778897;
-  font-size: 20px;
-  color: #fff;
-  border: 1px solid #1D3C6A;
-  border-radius: 30px;
+background-color: #778897;
+font-size: 20px;
+color: color(light);
+border: 1px solid #1D3C6A;
+border-radius: 30px;
 padding: 0 20px;
 margin: 10px 0;
 font-family: font-family(text1)
@@ -165,15 +146,14 @@ font-family: font-family(text1)
 
 #question {
     font-size: 25px;
-    color: #000;
-
+    color: color(dark);
 }
 
 #btn0, #btn1, #btn2, #btn3 {
     background-color: #778897;
     width: 250px;
     font-size: 20px;
-    color: #fff;
+    color: color(light);
     border: 1px solid #1D3C6A;
     border-radius: 50px;
     margin: 10px 30px;
@@ -193,18 +173,15 @@ font-family: font-family(text1)
 }
 
 #progress {
-    color: #000;
+    color: color(dark);
     font-size: 15px;
     padding-left: 30px; 
     text-align: left !important;
 }
 
-
-
-
 h3 {
     font-family: font-family(header1) !important;
-    color: color(secondary) !important;
+    color: color(trans) !important;
     text-align: center;
     margin: 0 0 40px 0 !important;
     text-transform: uppercase;
@@ -212,7 +189,7 @@ h3 {
   }
 
   .page-footer{ 
-    background-color: #0000 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
     width: 100%;
     height: auto;
     background-image: url("../img/moon2.png");
@@ -226,16 +203,12 @@ h3 {
   .infobox {
     margin-top: -10px !important;
     display: flex !important;
-    
   }
-  
-  
+
   .black-text1 {
       margin: 1rem !important;
-      color: color(blackbasic);
+      color: color(dark);
     }
-  
-  
   
   #footer-content {
     margin-bottom: -30%;
@@ -245,22 +218,12 @@ h3 {
       }
   }
   
-  @keyframes slide {
-    0% {
-      transform: translateY(0) translateX(0);
-    }
-    100% {
-      transform: translateY(20px) translateX(0);
-    }
-  }
-  
   @media only screen and (min-width: 0px) {
     * {
       font-size: 14px;
     }
   }
 
-  
   @media only screen and (max-width: 399px) {
     .page-footer{ 
       height: 100px !important;
@@ -303,7 +266,7 @@ h3 {
     }
   }
   
-  @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) {
   
   nav ul li a {
   font-size: 1em !important;
@@ -402,7 +365,6 @@ background-color: #57636e;
     }
   }
   
-  
   @media only screen and (min-width: 768px) {
     .page-footer{ 
       height: 180px !important;  
@@ -414,7 +376,6 @@ background-color: #57636e;
     .black-text1 {
       font-size: 1.5em !important;
     }
-  
   }
 
   @media only screen and (max-width:899px) {
@@ -464,7 +425,6 @@ background-color: #57636e;
     color: #fff !important;
   }
   }
-  
   
   @media only screen and (min-width: 1700px) {
     .page-footer{ 

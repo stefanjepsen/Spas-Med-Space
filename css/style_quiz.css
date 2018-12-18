@@ -12,7 +12,7 @@ body {
   display: flex !important;
   min-height: 100vh !important;
   flex-direction: column;
-  color: white;
+  color: #fff;
   cursor: url(../img/cursor.cur), auto;
 }
 
@@ -50,7 +50,7 @@ a.dropdown-trigger.btn {
 }
 
 #dropdown li:hover {
-  background-color: #fff200;
+  background-color: rgba(255, 242, 0, 0.829);
 }
 
 nav ul a {
@@ -65,7 +65,7 @@ nav ul a {
 
 nav ul li {
   margin-top: 30px;
-  color: #fff200 !important;
+  color: rgba(255, 242, 0, 0.829) !important;
 }
 
 #nav-mobile {
@@ -73,18 +73,11 @@ nav ul li {
   display: inline-block !important;
 }
 
-#spaceman {
-  position: fixed;
-  bottom: 20px;
-  right: 25px;
-  animation: slide 2s linear infinite alternate both;
-}
-
 #quiz-box {
   height: auto;
   background-color: #fff200d3;
   text-align: center;
-  border: 10px solid #fff200;
+  border: 10px solid rgba(255, 242, 0, 0.829);
 }
 
 #quiz {
@@ -92,7 +85,7 @@ nav ul li {
 }
 
 #quiz-box h3 {
-  background-color: #fff200;
+  background-color: rgba(255, 242, 0, 0.829);
   font-size: 50px !important;
   padding: 20px 0px !important;
   color: black !important;
@@ -100,11 +93,11 @@ nav ul li {
 }
 
 #result {
-  color: #000;
+  color: black;
 }
 
 #score {
-  color: #000;
+  color: black;
   text-align: center;
   font-size: 20px;
 }
@@ -127,7 +120,7 @@ nav ul li {
 
 #question {
   font-size: 25px;
-  color: #000;
+  color: black;
 }
 
 #btn0, #btn1, #btn2, #btn3 {
@@ -154,7 +147,7 @@ nav ul li {
 }
 
 #progress {
-  color: #000;
+  color: black;
   font-size: 15px;
   padding-left: 30px;
   text-align: left !important;
@@ -162,7 +155,7 @@ nav ul li {
 
 h3 {
   font-family: "Handlee", cursive !important;
-  color: #fff200 !important;
+  color: rgba(255, 242, 0, 0.829) !important;
   text-align: center;
   margin: 0 0 40px 0 !important;
   text-transform: uppercase;
@@ -170,7 +163,7 @@ h3 {
 }
 
 .page-footer {
-  background-color: #0000 !important;
+  background-color: rgba(0, 0, 0, 0) !important;
   width: 100%;
   height: auto;
   background-image: url("../img/moon2.png");
@@ -199,14 +192,6 @@ h3 {
   width: auto;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateY(0) translateX(0);
-  }
-  100% {
-    transform: translateY(20px) translateX(0);
-  }
-}
 @media only screen and (min-width: 0px) {
   * {
     font-size: 14px;

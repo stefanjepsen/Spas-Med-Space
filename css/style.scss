@@ -2,12 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Handlee");
 
 $colors: (
-  primary: #005dff,
-  primary-light: lighten(#005dff, 40%),
-  primary-dark: darken(#005dff, 40%),
-  secondary: hsl(57, 100%, 50%),
-  basic: #fff,
-  blackbasic: black
+  trans: hsla(57, 100%, 50%, 0.829),
+  trans-dark: rgba(255, 255, 255, 0.514),
+  light: #fff,
+  dark: black
 );
 
 $fonts: (
@@ -29,9 +27,6 @@ $fonts: (
   @return map-get($fonts, $font-name);
 }
 
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -44,15 +39,13 @@ body {
   display: flex !important;
   min-height: 100vh !important;
   flex-direction: column;
-  color: white;
+  color: color(light);
   cursor:url(../img/cursor.cur), auto;
-  
 }
 
 main {
   flex: 1 0 auto;
 }
-
   header {
     height: 150px;
   }
@@ -64,7 +57,7 @@ main {
 }
 
 a.dropdown-trigger.btn {
-  background-color: rgba(255, 255, 255, 0) !important;
+  background-color:rgba(255, 255, 255, 0) !important;
   letter-spacing: 0 !important;
   text-transform: none !important;
   box-shadow: none !important;
@@ -72,9 +65,8 @@ a.dropdown-trigger.btn {
 }
 
 #dropdown {
-  background-color: hsla(57, 100%, 50%, 0.829);
+  background-color: color(trans);
   overflow-y: visible;
-
 }
 
 #dropdown li {
@@ -83,9 +75,8 @@ a.dropdown-trigger.btn {
   font-size: 10px !important;
 }
 
-
 #dropdown li:hover {
-background-color: hsl(57, 100%, 50%);
+background-color:color(trans);
 }
 
 nav ul a {
@@ -95,22 +86,21 @@ nav ul a {
   cursor: pointer;
   font-size: 3em !important;
   font-family: font-family(header1) !important;
-  color: color(basic) !important;
+  color: color(light) !important;
   
 }
 
 #spil {
-color: rgba(255, 255, 255, 0.315) !important;
+color: color(trans-dark) !important;
 }
 
 #spil:hover {
-color: white !important;
-
+color:color(light)!important;
 }
 
 nav ul li {
   margin-top: 30px;
-  color: color(secondary) !important;
+  color: color(trans) !important;
 }
 
 #nav-mobile {
@@ -124,20 +114,18 @@ main {
 
 h3 {
   font-family: font-family(header1) !important;
-  color: color(secondary) !important;
+  color: color(trans) !important;
   text-align: center;
   margin: 0 !important;
   text-transform: uppercase;
   font-size: 2em !important; 
 }
 
-
-
 #text-box {
   width: 100% !important;
   max-width: 100% !important;
   height: 400px;
-  background-color: rgba(255, 255, 255, 0.514);
+  background-color:color(trans-dark);
   margin: 50px 0;
 }
 
@@ -148,12 +136,12 @@ nav ul a {
   cursor: pointer;
   font-size: 3em !important;
   font-family: font-family(header1) !important;
-  color: color(basic) !important;
+  color: color(light) !important;
 
 }
 nav ul li {
   margin-top: 30px;
-  color: color(secondary) !important;
+  color: color(trans) !important;
 }
 
 #nav-mobile {
@@ -167,7 +155,82 @@ nav ul li {
 }
 
 .modal-content{
-  color: color(blackbasic) !important;
+  color: color(dark) !important;
+}
+.rocket-man2 {
+  opacity: 0;
+  height: 85px;
+  width: 85px;
+  background-image: url("../img/space-man.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: 79%; 
+  z-index: 9999;
+  top: 14%;
+  position: absolute;
+  animation: rocket-man-static linear alternate both infinite 3s 13s;
+}
+
+.waves-effect.waves-light.btn.modal-trigger {
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  background-color: color(trans);
+  border: 2px solid color(dark);
+  color: color(dark);
+  left: 65%;
+  opacity: 0;
+  top: 14%;
+  z-index: 1;
+  animation: rocket-man-static linear alternate both infinite 3s 13s;
+  border-radius: 30px;
+  border-radius: 30px;
+}
+
+.rocket-man {
+  height: 80px;
+  width: 80px;
+  background-image: url("../img/space-man.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -8px;
+  margin-left: -8px;
+  top:125% !important;
+  left:0% !important;
+  opacity: 0;
+  animation: rocket-entrance 12s 1s linear ;
+}
+
+.page-footer{ 
+  background-color: #0000 !important;
+  width: 100%;
+  height: auto;
+  background-image: url("../img/moon2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: static;
+  bottom:0;
+  padding: 0 !important;
+}
+
+.infobox {
+  margin-top: -10px !important;
+  display: flex !important;
+}
+
+.black-text1 {
+    margin: 1rem !important;
+    color: color(dark);
+  }
+
+#footer-content {
+  margin-bottom: -30%;
+    img {
+      height: 50px !important;
+      width: auto;
+    }
 }
 
 .solar-syst div {
@@ -177,7 +240,7 @@ nav ul li {
  z-index: 999;
 }
 
-////////////////////////// Planets
+////////////////////////// Planets////////////////////////// ////////////////////////// Planets////////////////////////// ////////////////////////// Planets////////////////////////// 
 .neptune {
   height: 130px;
   width: 130px;
@@ -227,7 +290,7 @@ nav ul li {
   margin-left: -10px;
   top:49% !important;
   left:14% !important;
-  animation: slide-tr 14s cubic-bezier(0.470, -4.000, 0.745, 0.115) infinite alternate-reverse both;
+  animation: slide 14s cubic-bezier(0.470, -4.000, 0.745, 0.115) infinite alternate-reverse both;
 }
 
 .sun {
@@ -242,7 +305,6 @@ nav ul li {
   left:50% !important;
 	        animation: spin 45s linear infinite ;
 }
-
 
 .mercury {
   height: 70px;
@@ -268,6 +330,7 @@ nav ul li {
   left:58% !important;
   animation: mars linear infinite alternate-reverse 26s;
 }
+
 .saturn {
   height: 110px;
   width: 225px;
@@ -280,7 +343,6 @@ nav ul li {
   left:68% !important;
   animation: saturn 13s linear infinite;
 }
-
 
 .uranus{
   height: 120px;
@@ -308,53 +370,7 @@ nav ul li {
   animation:slide 2s linear infinite alternate both;
 }
 
-.rocket-man {
-  height: 80px;
-  width: 80px;
-  background-image: url("../img/space-man.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-top: -8px;
-  margin-left: -8px;
-  top:125% !important;
-  left:0% !important;
-  opacity: 0;
-  animation: rocket-entrance 12s 1s linear ;
-}
-.rocket-man2 {
-  opacity: 0;
-  height: 85px;
-  width: 85px;
-  background-image: url("../img/space-man.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-left: 79%; 
-  z-index: 9999;
-  top: 14%;
-  position: absolute;
-  animation: rocket-man-static linear alternate both infinite 3s 13s;
-}
-
-.waves-effect.waves-light.btn.modal-trigger {
-  position: absolute;
-  width: 200px;
-  height: 75px;
-  text-align: center;
-  line-height: 75px;
-  background-color: color(secondary);
-  border: 2px solid color(blackbasic);
-  color: color(blackbasic);
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  left: 65%;
-  opacity: 0;
-top: 14%;
-  z-index: 1;
-  animation: rocket-man-static linear alternate both infinite 3s 13s;
-}
-
-
-/////////////////////////////// Keyframes/////////////////////////////////////
+/////////////////////////////// Keyframes//////////////////////////////////////////////////////////////////// Keyframes//////////////////////////////////////////////////////////////////// Keyframes/////////////////////////////////////
 
 @keyframes rocket-man-static{
   0% {
@@ -402,9 +418,6 @@ top: 14%;
     transform:  rotate(-2deg) scaleX(1.20) scaleY(1.20) ;
   }
 }
-
-
-
 
 @keyframes rocket-entrance {
   0% {
@@ -551,7 +564,6 @@ top: 14%;
   }
 }
 
-
 @keyframes orbit1 {
   0% {
     transform:  translate(-56px,-56px)  ;
@@ -571,28 +583,6 @@ top: 14%;
   
   100% {
     transform:  translate(-156px,-60px)  ;
-  }
-}
-
-
-@keyframes orbit2{
-  0% {
-    transform:  translate(-126px,131px)  ;
-  }
-  25% {
-    transform:  translate(82px,283px)  ;
-  }
-  51% {
-    transform:  translate(284px,31px)  ;
-  }
-  75% {
-    transform:  translate(92px,-21px)  ;
-  }
-  88% {
-    transform:  translate(1px,-1px)  ;
-  }
-  100% {
-    transform:  translate(-126px,131px)  ;
   }
 }
 
@@ -628,7 +618,6 @@ top: 14%;
     transform:  translate(20px,20px)  ;
   }
 }
-
 
 @keyframes mercury {
   0% {
@@ -678,36 +667,6 @@ top: 14%;
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(365deg); }
-}
-
- @-webkit-keyframes slide-tl {
-  0% {
-    -webkit-transform: translateY(0) translateX(0);
-            transform: translateY(0) translateX(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px) translateX(-100px);
-            transform: translateY(-100px) translateX(-100px);
-  }
-}
-@keyframes slide-tl {
-  0% {
-    -webkit-transform: translateY(0) translateX(0);
-            transform: translateY(0) translateX(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px) translateX(-100px);
-            transform: translateY(-100px) translateX(-100px);
-  }
-}
-
- @keyframes slide-tr {
-  0% {
-    transform: translateY(0) translateX(0);
-  }
-  100% {
-    transform: translateY(-100px) translateX(100px);
-  }
 }
 
 @keyframes saturn{
@@ -763,41 +722,7 @@ top: 14%;
     transform:  translate(0px,0px)  ;
   }
 }
-
-.page-footer{ 
-  background-color: #0000 !important;
-  width: 100%;
-  height: auto;
-  background-image: url("../img/moon2.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: static;
-  bottom:0;
-  padding: 0 !important;
-}
-
-.infobox {
-  margin-top: -10px !important;
-  display: flex !important;
-  
-}
-
-
-.black-text1 {
-    margin: 1rem !important;
-    color: color(blackbasic);
-  }
-
-
-
-#footer-content {
-  margin-bottom: -30%;
-    img {
-      height: 50px !important;
-      width: auto;
-    }
-}
-
+//////////////////////////////Media//////////////////////////////////////////////////////////////Media//////////////////////////////////////////////////////////////Media////////////////////////////////
 @media only screen and (min-width: 0px) {
   * {
     font-size: 14px;
@@ -923,9 +848,8 @@ top: 14%;
     height: 40px;
     width: 40px;
     margin-top: -185px;
-    margin-left: 115px;
+    margin-left: 35px;
   }
-
 
   .sun {
     height: 160px;
@@ -957,7 +881,6 @@ top: 14%;
     margin-top: -7.5px;
     margin-left: -7.5px;
   }
-  
   
   .uranus{
     height: 60px;
@@ -992,9 +915,6 @@ top: 14%;
   }
  
 }
-
-
-
 
 @media only screen and (min-width: 768px) {
   .page-footer{ 
@@ -1081,7 +1001,6 @@ top: 14%;
 }
 
 @media only screen and (max-width: 1440px) {
-
   .rocket-man2 {
     opacity: 0;
     height: 60px;
@@ -1089,6 +1008,7 @@ top: 14%;
     top: 14.5%;
     z-index: 1;
   }
+  
   }
 
   @media only screen and (min-width: 1440px) {
@@ -1096,7 +1016,7 @@ top: 14%;
       width: 170px ;
       height: 50px ;
       line-height: 50px ;
-      left: 62% ;
+      left: 68% ;
       z-index: 2;
     }
     }

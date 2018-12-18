@@ -12,7 +12,7 @@ body {
   display: flex !important;
   min-height: 100vh !important;
   flex-direction: column;
-  color: white;
+  color: #fff;
   cursor: url(../img/cursor.cur), auto;
 }
 
@@ -263,7 +263,7 @@ h3 {
   }
 
   #spil:hover {
-    color: white !important;
+    color: #fff !important;
   }
 }
 @media only screen and (min-width: 1700px) {
@@ -277,4 +277,4 @@ h3 {
   }
 }
 
-/*# sourceMappingURL=contact_page.css.map */
+/*# sourceMappingURL=style_contact.css.map */

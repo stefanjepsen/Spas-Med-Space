@@ -2,12 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Handlee");
 
 $colors: (
-  primary: #005dff,
-  primary-light: lighten(#005dff, 40%),
-  primary-dark: darken(#005dff, 40%),
+  trans: hsla(57, 100%, 50%, 0.829),
   secondary: hsl(57, 100%, 50%),
-  basic: #fff,
-  blackbasic: black
+  light: #fff,
+  dark: black
 );
 
 $fonts: (
@@ -41,11 +39,9 @@ body {
   display: flex !important;
   min-height: 100vh !important;
   flex-direction: column;
-  color: white;
+  color: color(light);
   cursor:url(../img/cursor.cur), auto;
 }
-
-
 
 main {
   flex: 1 0 auto;
@@ -61,7 +57,6 @@ header {
   left: 20px;
 }
 
-
 a.dropdown-trigger.btn {
   background-color: rgba(255, 255, 255, 0) !important;
   letter-spacing: 0 !important;
@@ -71,7 +66,7 @@ a.dropdown-trigger.btn {
 }
 
 #dropdown {
-  background-color: hsla(57, 100%, 50%, 0.829);
+  background-color:color(trans);
   overflow-y: visible;
 }
 
@@ -81,9 +76,8 @@ a.dropdown-trigger.btn {
   font-size: 10px !important;
 }
 
-
 #dropdown li:hover {
-background-color: hsl(57, 100%, 50%);
+background-color: color(secondary);
 }
 
 nav ul a {
@@ -93,10 +87,8 @@ nav ul a {
   cursor: pointer;
   font-size: 3em !important;
   font-family: font-family(header1) !important;
-  color: color(basic) !important;
-
+  color: color(light) !important;
 }
-
 
 nav ul li {
   margin-top: 30px;
@@ -142,12 +134,6 @@ h3 {
     max-width: 85%;
 }
 
-#planet_facts {
- 
-    color: #000000;
-    line-height: 40px;
-}
-
 #infographic {
   max-width: 45%;
 }
@@ -174,17 +160,13 @@ h3 {
 
 .infobox {
   margin-top: -10px !important;
-  display: flex !important;
-  
+  display: flex !important;  
 }
-
 
 .black-text1 {
     margin: 1rem !important;
-    color: color(blackbasic);
-  }
-
-
+    color: color(dark);
+}
 
 #footer-content {
   margin-bottom: -30%;
@@ -244,7 +226,6 @@ h3 {
         margin-bottom: -10%
       }
   }
-
 }
 
 @media only screen and (min-width: 400px) {
@@ -326,7 +307,6 @@ h3 {
   .black-text1 {
     font-size: 1.5em !important;
   }
-
 }
 
 @media only screen and (max-width:899px) {
@@ -372,10 +352,9 @@ h3 {
   }
   
   #spil:hover {
-    color: white !important;
+    color:color(light)!important;
   }
 }
-
 
 @media only screen and (min-width: 1700px) {
   .page-footer{ 

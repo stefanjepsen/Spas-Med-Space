@@ -131,14 +131,6 @@ h3 {
   position: absolute;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .sun {
   background-image: url("../img/sun.png");
   height: 80px;
@@ -340,56 +332,6 @@ h3 {
   font-size: 1em !important;
 }
 
-@-webkit-keyframes orb {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
-@keyframes orb {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
-@keyframes slide {
-  0% {
-    transform: translateY(0) translateX(0);
-  }
-  100% {
-    transform: translateY(20px) translateX(0);
-  }
-}
-@keyframes slide2 {
-  0% {
-    transform: translateY(0) translateX(0);
-  }
-  20% {
-    transform: translateY(20px) translateX(0);
-  }
-  40% {
-    transform: translateY(0) translateX(0);
-  }
-  60% {
-    transform: translateY(20px) translateX(0);
-  }
-  80% {
-    opacity: 1;
-    transform: translateY(0) translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(20px) translateX(0);
-  }
-}
 #transparant_box {
   width: 100% !important;
   max-width: 100% !important;
@@ -443,6 +385,64 @@ h3 {
   width: auto;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes orb {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes orb {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(20px) translateX(0);
+  }
+}
+@keyframes slide2 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  20% {
+    transform: translateY(20px) translateX(0);
+  }
+  40% {
+    transform: translateY(0) translateX(0);
+  }
+  60% {
+    transform: translateY(20px) translateX(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px) translateX(0);
+  }
+}
 @media only screen and (min-width: 0px) {
   * {
     font-size: 14px;
@@ -866,7 +866,7 @@ h3 {
   }
 
   #spil:hover {
-    color: white !important;
+    color: #fff !important;
   }
 }
 @media only screen and (min-width: 1700px) {

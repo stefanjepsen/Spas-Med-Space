@@ -2,12 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Handlee");
 
 $colors: (
-  primary: #005dff,
-  primary-light: lighten(#005dff, 40%),
-  primary-dark: darken(#005dff, 40%),
   secondary: #fff200,
-  basic: #fff,
-  blackbasic: black
+  trans: hsla(57, 100%, 50%, 0.829),
+  trans-dark: rgba(255, 255, 255, 0.514),
+  light: #fff,
+  dark: black
 );
 
 $fonts: (
@@ -73,7 +72,6 @@ $fonts: (
     background-color: hsla(57, 100%, 50%, 0.829);
     font-size: 10px !important;
     overflow-y: visible;
-
   }
 
   #dropdown li {
@@ -82,7 +80,6 @@ $fonts: (
     font-size: 10px !important;
   }
 
-  
 #dropdown li:hover {
   background-color: hsl(57, 100%, 50%);
 }
@@ -94,10 +91,8 @@ $fonts: (
     cursor: pointer;
     font-size: 3em !important;
     font-family: font-family(header1) !important;
-    color: color(basic) !important;
+    color: color(light) !important;
   }
-
-
 
   nav ul li {
     margin-top: 30px;
@@ -113,7 +108,6 @@ $fonts: (
     flex: 1 0 auto;
   }
 
-  
   #spaceman {
     position: fixed;
     bottom: 20px;
@@ -162,15 +156,6 @@ $fonts: (
     position: absolute;
   }
 
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
   .sun {
     background-image: url("../img/sun.png");
     height: 80px;
@@ -212,6 +197,7 @@ $fonts: (
     -webkit-animation: orb 18s linear infinite;
             animation: orb 18s linear infinite;
   }
+
   .venus:before {
     height: 22px;
     width: 22px;
@@ -336,7 +322,6 @@ $fonts: (
     animation: spin 10s linear infinite;
   }
   
-  
   .pluto {
     height: 580px;
     width: 580px;
@@ -363,6 +348,69 @@ $fonts: (
   .links {
     margin-top: 5px !important;
     font-size: 1em !important;
+  }
+
+  #transparant_box {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+    background-color: #fff200d3;
+    margin: 50px 0;
+
+    h3 {
+      color:color(dark) !important;
+    }
+  }
+
+  #text_box {
+    width: 70% !important;
+    max-width: 1280px !important;
+    margin: auto !important;
+    padding: 50px;
+  }
+
+  #text_inside_box {
+    padding-top: 30px;
+    color: color(dark);
+  }
+
+  .page-footer{ 
+    background-color: #0000 !important;
+    width: 100%;
+    height: auto;
+    background-image: url("../img/moon2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: static;
+    bottom:0;
+    padding: 0 !important;
+  }
+  
+  .infobox {
+    margin-top: -10px !important;
+    display: flex !important;
+  }
+  
+  .black-text1 {
+      margin: 1rem !important;
+      color: color(dark);
+    }
+  
+  #footer-content {
+    margin-bottom: -30%;
+      img {
+        height: 50px !important;
+        width: auto;
+      }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
   
   @-webkit-keyframes orb {
@@ -419,64 +467,6 @@ $fonts: (
     }
   }
 
-  #transparant_box {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto;
-    background-color: #fff200d3;
-    margin: 50px 0;
-
-    h3 {
-      color: black !important;
-    }
-  }
-
-  #text_box {
-    width: 70% !important;
-    max-width: 1280px !important;
-    margin: auto !important;
-    padding: 50px;
-  }
-
-  #text_inside_box {
-    padding-top: 30px;
-    color: black;
-  }
-
-  .page-footer{ 
-    background-color: #0000 !important;
-    width: 100%;
-    height: auto;
-    background-image: url("../img/moon2.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: static;
-    bottom:0;
-    padding: 0 !important;
-  }
-  
-  .infobox {
-    margin-top: -10px !important;
-    display: flex !important;
-    
-  }
-  
-  
-  .black-text1 {
-      margin: 1rem !important;
-      color: color(blackbasic);
-    }
-  
-  
-  
-  #footer-content {
-    margin-bottom: -30%;
-      img {
-        height: 50px !important;
-        width: auto;
-      }
-  }
-  
   @media only screen and (min-width: 0px) {
     * {
       font-size: 14px;
@@ -588,7 +578,6 @@ $fonts: (
         margin-left: -10px;
       }
 
-      
       .earth {
         height: 180px;
         width: 180px;
@@ -841,9 +830,7 @@ $fonts: (
         margin-top: -10px;
         margin-left: -10px;
       }
-      
   }
-  
   
   @media only screen and (min-width: 768px) {
     .page-footer{ 
@@ -866,7 +853,6 @@ $fonts: (
       padding: 0 5px;
     }
   }
-  
   
   @media only screen and (min-width: 900px) {
     .page-footer{ 
@@ -902,10 +888,9 @@ $fonts: (
     }
     
     #spil:hover {
-      color: white !important;
+      color: color(light)!important;
     }
   }
-  
   
   @media only screen and (min-width: 1700px) {
     .page-footer{ 
