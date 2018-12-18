@@ -5,7 +5,8 @@ $colors: (
   trans: hsla(57, 100%, 50%, 0.829),
   trans-dark: rgba(255, 255, 255, 0.514),
   light: #fff,
-  dark: black
+  dark: black,
+  primary:#fff200
 );
 
 $fonts: (
@@ -177,8 +178,8 @@ nav ul li {
   height: 75px;
   text-align: center;
   line-height: 75px;
-  background-color: color(trans);
-  border: 2px solid color(dark);
+  background-color: color(primary);
+  border: 2px solid #778897;;
   color: color(dark);
   left: 65%;
   opacity: 0;

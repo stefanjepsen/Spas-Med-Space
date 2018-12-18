@@ -151,8 +151,8 @@ nav ul li {
   height: 75px;
   text-align: center;
   line-height: 75px;
-  background-color: rgba(255, 242, 0, 0.829);
-  border: 2px solid black;
+  background-color: #fff200;
+  border: 2px solid #778897;
   color: black;
   left: 65%;
   opacity: 0;
