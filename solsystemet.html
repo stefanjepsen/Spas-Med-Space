@@ -22,7 +22,7 @@
           <ul id="nav-mobile">
             <li><a class='dropdown-trigger btn' href="solsystemet.html" data-target='dropdown'>Solsystemet</a></li>
             <ul id='dropdown' class='dropdown-content'>
-            <li><a href="solsystemet.html">Solsystemet</a></li>
+              <li><a href="solsystemet.html">Solsystemet</a></li>
               <li><a href="solen.html">Solen</a></li>
               <li><a href="merkur.html">Merkur</a></li>
               <li><a href="venus.html">Venus</a></li>
@@ -35,7 +35,7 @@
               <li><a href="pluto.html">Pluto</a></li>
             </ul>
             <li><a href="Link her">|</a></li>
-            <li><a id="spil" href="quiz.html">Spil & Film</a></li>
+            <li><a id="spil" href="quiz.html">Quiz </a></li>
           </ul>
         </div>
       </nav>
@@ -45,11 +45,15 @@
   </header>
 
   <main>
-    
-      <div onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')" id="spaceman"> <a href="index.html"style="cursor: pointer;"> <img src="img/space-man.png"> </a>
-        <audio id='mySound' src='sound/bitconnect.mp3'>
-      </div>
 
+    <div onclick="PlaySound('mySound')" style="cursor:pointer; z-index: 999;" id="spaceman"> <img src="img/space-man.png">
+      </a>
+      <audio id='mySound' src='sound/Solsystemet.m4a'>
+    </div>
+
+    <div id="rocket-sign"> <img src="img/rocket-sign.png" alt="">
+    </div>
+    
     <h3>Solsystemet</h3>
 
     <div id="outside-solar-syst">
@@ -85,20 +89,20 @@
         </div>
       </div>
     </div>
-    
+
   </main>
 
 
   <footer class="page-footer">
-      <div class="container valign-wrapper">
-        <div id="footer-content" class="row valign-wrapper">
-          <div class="infobox left-align">
-            <a href="contactpage.html">
+    <div class="container valign-wrapper">
+      <div id="footer-content" class="row valign-wrapper">
+        <div class="infobox left-align">
+          <a href="contactpage.html">
             <p class="black-text1" style="white-space: nowrap;">
               Omkring os
             </p>
           </a>
-          </div>
+        </div>
 
         <div class="col l6 s12 right-align ">
           <a href="https://illvid.dk/" target="_blank"> <img src="img/illustreret-videnskab.png"> </a>
